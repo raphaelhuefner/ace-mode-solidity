@@ -1,5 +1,3 @@
-var ace = window.ace;
-
 ace.define("ace/mode/doc_comment_highlight_rules",["require","exports","module","ace/lib/oop","ace/mode/text_highlight_rules"], function(acequire, exports, module) {
 "use strict";
 
@@ -50,14 +48,14 @@ exports.DocCommentHighlightRules = DocCommentHighlightRules;
 
 });
 
-ace.define("ace/mode/javascript_highlight_rules",["require","exports","module","ace/lib/oop","ace/mode/doc_comment_highlight_rules","ace/mode/text_highlight_rules"], function(acequire, exports, module) {
+ace.define("ace/mode/solidity_highlight_rules",["require","exports","module","ace/lib/oop","ace/mode/doc_comment_highlight_rules","ace/mode/text_highlight_rules"], function(acequire, exports, module) {
 "use strict";
 
 var oop = acequire("../lib/oop");
 var DocCommentHighlightRules = acequire("./doc_comment_highlight_rules").DocCommentHighlightRules;
 var TextHighlightRules = acequire("./text_highlight_rules").TextHighlightRules;
 
-var JavaScriptHighlightRules = function(options) {
+var SolidityHighlightRules = function(options) {
     var intTypes = 'bytes|int|uint';
     for (var width = 8; width <= 256; width += 8)
         intTypes += '|bytes' + (width / 8) + '|uint' + width + '|int' + width;
@@ -386,9 +384,9 @@ var JavaScriptHighlightRules = function(options) {
     this.normalizeRules();
 };
 
-oop.inherits(JavaScriptHighlightRules, TextHighlightRules);
+oop.inherits(SolidityHighlightRules, TextHighlightRules);
 
-exports.JavaScriptHighlightRules = JavaScriptHighlightRules;
+exports.SolidityHighlightRules = SolidityHighlightRules;
 });
 
 ace.define("ace/mode/matching_brace_outdent",["require","exports","module","ace/range"], function(acequire, exports, module) {
@@ -884,12 +882,12 @@ oop.inherits(FoldMode, BaseFoldMode);
 
 });
 
-ace.define("ace/mode/javascript",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/javascript_highlight_rules","ace/mode/matching_brace_outdent","ace/range","ace/worker/worker_client","ace/mode/behaviour/cstyle","ace/mode/folding/cstyle"], function(acequire, exports, module) {
+ace.define("ace/mode/solidity",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/solidity_highlight_rules","ace/mode/matching_brace_outdent","ace/range","ace/worker/worker_client","ace/mode/behaviour/cstyle","ace/mode/folding/cstyle"], function(acequire, exports, module) {
 "use strict";
 
 var oop = acequire("../lib/oop");
 var TextMode = acequire("./text").Mode;
-var JavaScriptHighlightRules = acequire("./javascript_highlight_rules").JavaScriptHighlightRules;
+var SolidityHighlightRules = acequire("./solidity_highlight_rules").SolidityHighlightRules;
 var MatchingBraceOutdent = acequire("./matching_brace_outdent").MatchingBraceOutdent;
 var Range = acequire("../range").Range;
 var WorkerClient = acequire("../worker/worker_client").WorkerClient;
@@ -897,7 +895,7 @@ var CstyleBehaviour = acequire("./behaviour/cstyle").CstyleBehaviour;
 var CStyleFoldMode = acequire("./folding/cstyle").FoldMode;
 
 var Mode = function() {
-    this.HighlightRules = JavaScriptHighlightRules;
+    this.HighlightRules = SolidityHighlightRules;
 
     this.$outdent = new MatchingBraceOutdent();
     this.$behaviour = new CstyleBehaviour();
@@ -951,7 +949,7 @@ oop.inherits(Mode, TextMode);
     };
 
 //    this.createWorker = function(session) {
-//        var worker = new WorkerClient(["ace"], "ace/mode/javascript_worker", "JavaScriptWorker");
+//        var worker = new WorkerClient(["ace"], "ace/mode/solidity_worker", "SolidityWorker");
 //        worker.attachToDocument(session.getDocument());
 //
 //        worker.on("jslint", function(results) {
@@ -965,7 +963,7 @@ oop.inherits(Mode, TextMode);
 //        return worker;
 //    };
 
-    this.$id = "ace/mode/javascript";
+    this.$id = "ace/mode/solidity";
 }).call(Mode.prototype);
 
 exports.Mode = Mode;
