@@ -1,11 +1,10 @@
 const puppeteer = require('puppeteer');
 const express = require('express');
-const staticServe = require('express-static');
 
 module.exports = function gatherTokenizations() {
   return new Promise((gatherResolve, gatherReject) => {
     const server = express()
-      .use(staticServe(__dirname + '/public/'))
+      .use(express.static(__dirname + '/public/'))
       .listen(3000, async () => {
         const browser = await puppeteer.launch();
         const page = await browser.newPage();

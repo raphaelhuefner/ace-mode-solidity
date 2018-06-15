@@ -9,7 +9,7 @@
   "scripts": {
     "build": "node ./test_browserify/build.js",
     "overwrite": "npm run build && node ./test_browserify/overwrite-expected-tokenizations.js",
-    "start": "npm run build && npx http-server ./test_browserify/public -a 127.0.0.1 -c-1 --cors -o"
+    "test": "npm run build && node ./test_browserify/run.js"
   },
   "repository": {
     "type": "git",
@@ -40,11 +40,9 @@
     "browserify": "^16.1.0",
     "enumerate-files": "^2.0.0",
     "express": "^4.16.3",
-    "express-static": "^1.2.5",
     "fs-readfile-promise": "^3.0.1",
     "fs-writefile-promise": "^3.0.0",
     "puppeteer": "^1.5.0",
-    "string-to-stream": "^1.1.1",
-    "tape": "^4.5.1"
+    "tape": "^4.9.1"
   }
 }
