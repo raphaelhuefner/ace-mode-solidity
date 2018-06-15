@@ -1,0 +1,50 @@
+{
+  "name": "ace_mode_solidity",
+  "version": "1.0.0",
+  "description": "Ace Edit Mode for Ethereum's Solidity language.",
+  "main": "ace_mode_solidity.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "node ./test_browserify/build.js",
+    "overwrite": "npm run build && node ./test_browserify/overwrite-tokenizations.js",
+    "start": "npm run build && npx http-server ./test_browserify/public -a 127.0.0.1 -c-1 --cors -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelhuefner/ace_mode_solidity.git"
+  },
+  "keywords": [
+    "ace",
+    "edit",
+    "mode",
+    "syntax",
+    "highlighting",
+    "ethereum",
+    "solidity"
+  ],
+  "author": {
+    "name": "Raphael Huefner",
+    "email": "raphaelhuefner@gmail.com",
+    "url": "https://rh.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raphaelhuefner/ace_mode_solidity/issues"
+  },
+  "homepage": "https://github.com/raphaelhuefner/ace_mode_solidity#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "brace": "^0.8.0",
+    "browserify": "^16.1.0",
+    "enumerate-files": "^2.0.0",
+    "express": "^4.16.3",
+    "express-static": "^1.2.5",
+    "fs-readfile-promise": "^3.0.1",
+    "fs-writefile-promise": "^3.0.0",
+    "puppeteer": "^1.5.0",
+    "string-to-stream": "^1.1.1",
+    "tape": "^4.5.1"
+  }
+}
