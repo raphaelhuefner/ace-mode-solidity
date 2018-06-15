@@ -1,19 +1,16 @@
 {
-  "name": "ace_mode_solidity",
-  "version": "1.0.0",
+  "name": "ace-mode-solidity",
+  "version": "0.0.1-alpha.1",
   "description": "Ace Edit Mode for Ethereum's Solidity language.",
-  "main": "ace_mode_solidity.js",
-  "directories": {
-    "test": "test"
-  },
+  "browser": "mode-solidity.js",
   "scripts": {
-    "build": "node ./test_browserify/build.js",
-    "overwrite": "npm run build && node ./test_browserify/overwrite-expected-tokenizations.js",
-    "test": "npm run build && node ./test_browserify/run.js"
+    "test-build": "node ./test_browserify/build.js",
+    "test-overwrite": "npm run test-build && node ./test_browserify/overwrite-expected-tokenizations.js",
+    "test": "npm run test-build && node ./test_browserify/run.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raphaelhuefner/ace_mode_solidity.git"
+    "url": "git+https://github.com/raphaelhuefner/ace-mode-solidity.git"
   },
   "keywords": [
     "ace",
@@ -31,9 +28,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/raphaelhuefner/ace_mode_solidity/issues"
+    "url": "https://github.com/raphaelhuefner/ace-mode-solidity/issues"
   },
-  "homepage": "https://github.com/raphaelhuefner/ace_mode_solidity#readme",
+  "homepage": "https://github.com/raphaelhuefner/ace-mode-solidity#readme",
   "dependencies": {},
   "devDependencies": {
     "brace": "^0.8.0",
