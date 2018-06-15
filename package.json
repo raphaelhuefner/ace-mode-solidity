@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "node ./test_browserify/build.js",
-    "overwrite": "npm run build && node ./test_browserify/overwrite-tokenizations.js",
+    "overwrite": "npm run build && node ./test_browserify/overwrite-expected-tokenizations.js",
     "start": "npm run build && npx http-server ./test_browserify/public -a 127.0.0.1 -c-1 --cors -o"
   },
   "repository": {

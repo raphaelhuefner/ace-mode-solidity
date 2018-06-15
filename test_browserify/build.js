@@ -2,15 +2,15 @@
 const fs = require('fs');
 const browserify = require('browserify');
 const writeFilePromise = require('fs-writefile-promise');
-const compileTestData = require('./test-data-compiler.js').compileTestData;
+const collectSoliditySnippets = require('./collect-solidity-snippets.js');
 
-async function writeTestData() {
-  let testData = await compileTestData();
-  await writeFilePromise(__dirname + '/test-data.js', testData);
+async function writeSoliditySnippets() {
+  let soliditySnippets = await collectSoliditySnippets();
+  await writeFilePromise(__dirname + '/solidity-snippets.js', soliditySnippets);
 }
 
 async function build() {
-  await writeTestData();
+  await writeSoliditySnippets();
 
   let browserify_opts = {
     debug: true,
@@ -19,7 +19,7 @@ async function build() {
   }
 
   browserify(browserify_opts)
-    .require(require.resolve('./test-data.js'), { basedir: __dirname })
+    .require(require.resolve('./solidity-snippets.js'), { basedir: __dirname })
     .require(require.resolve('../mode-solidity.js'), { basedir: __dirname })
     .require(require.resolve('./src/solidity-editor.js'), { entry: true, basedir: __dirname })
 

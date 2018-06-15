@@ -37,10 +37,9 @@ const gatherPromise = new Promise((gatherResolve, gatherReject) => {
 
 async function overwrite() {
   const tokenization = await gatherPromise;
-  // console.log(tokenization, 'promised!');
   Object.keys(tokenization).forEach(async function (key) {
     let jsonFileName = `${DATADIR}/${key}.json`;
-    let jsonFileContents = JSON.stringify(tokenization[key].tokenization, null, 2);
+    let jsonFileContents = JSON.stringify(tokenization[key], null, 2);
     jsonFileContents += "\n"; // to satisfy `git diff`
     await writeFilePromise(jsonFileName, jsonFileContents);
   });
