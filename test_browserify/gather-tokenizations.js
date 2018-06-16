@@ -6,7 +6,7 @@ module.exports = function gatherTokenizations() {
     const server = express()
       .use(express.static(__dirname + '/public/'))
       .listen(3000, async () => {
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({args: ['--no-sandbox']});
         const page = await browser.newPage();
 
         const outputPromise = new Promise((outputResolve, outputReject) => {
