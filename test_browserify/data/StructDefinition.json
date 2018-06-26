@@ -1,0 +1,192 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// StructDefinition = 'struct' Identifier '{'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                      ( VariableDeclaration ';' (VariableDeclaration ';')* ) '}'"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "struct"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Structure"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "variable.language",
+      "value": "address"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "architect"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "maxLoad"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "struct"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Town"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "name"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "keyword",
+      "value": "mapping"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "address"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "=>"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Structure"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "buildings"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  []
+]

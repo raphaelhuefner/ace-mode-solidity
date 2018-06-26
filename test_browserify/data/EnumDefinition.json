@@ -1,0 +1,288 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// EnumDefinition = 'enum' Identifier '{' EnumValue? (',' EnumValue)* '}'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// EnumValue = Identifier"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "enum"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Eniac"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "KathleenKayMcNultyMauchlyAntonelli"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "JeanJenningsBartik"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "FrancesElizabethBettyHolberton"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "MarlynWescoffMeltzer"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "FrancesVBilasSpence"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "RuthLichtermanTeitelbaum"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "enum"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Muppets"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Kermit"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "MissPiggy"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "FozzieBear"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Gonzo"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Rowlf"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Scooter"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Pepe"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Rizzo"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Animal"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "Walter"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  []
+]

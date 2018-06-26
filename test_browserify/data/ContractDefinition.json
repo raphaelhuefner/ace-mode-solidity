@@ -1,0 +1,510 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// ContractDefinition = ( 'contract' | 'library' | 'interface' ) Identifier"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                      ( 'is' InheritanceSpecifier (',' InheritanceSpecifier )* )?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                      '{' ContractPart* '}'"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "EmptyOneLiner"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "EmptyOneTrueBraceStyle"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// https://en.wikipedia.org/wiki/Indentation_style#Allman_style"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "EmptyAllmanBraceStyle"
+    }
+  ],
+  [
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "library"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Alexandria"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "identifier",
+      "value": "interface"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "OECD"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Inheriting"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "is"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Inheritable"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "MultipleInheritance"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "is"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Awesome"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Multiple"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Inheritable"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// (see https://solidity.readthedocs.io/en/develop/contracts.html#libraries )"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// Restrictions for libraries in comparison to contracts:"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// - No state variables"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// - Cannot inherit nor be inherited"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// - Cannot receive Ether"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// (These might be lifted at a later point.)"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "library"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "BetterBeenDecentralized"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "is"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Alexandria"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Ashurbanipal"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Aksum"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// grammar.txt seems to define something like \"inheritance parameters\":"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// > InheritanceSpecifier = UserDefinedTypeName ( '(' Expression ( ',' Expression )* ')' )?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// I can not find anything like that in the current Solidity documentation, not even the \"develop\" branch."
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// Also, I can't see where that parameter could get \"received\" in the definition of a parent."
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// All I can understand this as are C++ templates, and that this is \"reserved syntax\", like \"reserved keywords\"."
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// Here is my best guess as to how it could look like:"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "interface"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "FacyMcFaceface"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "is"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "So"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2016"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Able"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "Meme"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  []
+]

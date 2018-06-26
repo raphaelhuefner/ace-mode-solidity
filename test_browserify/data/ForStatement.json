@@ -1,0 +1,627 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// ForStatement = 'for' '(' (SimpleStatement)? ';' (Expression)? ';' (ExpressionStatement)? ')' Statement"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// Continue = 'continue'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// Break = 'break'"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "for"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";;"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "for"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";;"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "for"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "10"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "for"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "10"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "keyword.operator",
+      "value": "++"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "o"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "for"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "10"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "keyword.operator",
+      "value": "++"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "keyword",
+      "value": "if"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "%"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "keyword",
+      "value": "continue"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "o"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "+="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "i"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "keyword",
+      "value": "if"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "o"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": ">"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "40"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "keyword",
+      "value": "break"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  []
+]

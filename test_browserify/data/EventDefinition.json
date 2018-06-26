@@ -1,0 +1,331 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// EventDefinition = 'event' Identifier EventParameterList 'anonymous'? ';'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// EventParameterList = '(' ( EventParameter (',' EventParameter )* )? ')'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// EventParameter = TypeName 'indexed'? Identifier?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// EmitStatement = 'emit' FunctionCall"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "event"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Eve"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "uneventful"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "indexed"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "indexed"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "eventful"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "event"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Eve"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "uneventful"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "indexed"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "indexed"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "eventful"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "anonymous"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "event"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Eve"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "uneventful"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "event"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Eve"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "identifier",
+      "value": "emit"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Eve"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.language.boolean",
+      "value": "true"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  []
+]

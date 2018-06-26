@@ -1,0 +1,5169 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// Precedence by order (see github.com/ethereum/solidity/pull/732)"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   = Expression ('++' | '--')"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | NewExpression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | IndexAccess"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | MemberAccess"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | FunctionCall"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | '(' Expression ')'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | ('!' | '~' | 'delete' | '++' | '--' | '+' | '-') Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression '**' Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression ('*' | '/' | '%') Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression ('+' | '-') Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression ('<<' | '>>') Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression '&' Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression '^' Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression '|' Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression ('<' | '>' | '<=' | '>=') Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression ('==' | '!=') Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression '&&' Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression '||' Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression '?' Expression ':' Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | Expression ('=' | '|=' | '^=' | '&=' | '<<=' | '>>=' | '+=' | '-=' | '*=' | '/=' | '%=') Expression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//   | PrimaryExpression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// PrimaryExpression = BooleanLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | NumberLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | HexLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | StringLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | TupleExpression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | Identifier"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | ElementaryTypeNameExpression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// ExpressionList = Expression ( ',' Expression )*"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// NameValueList = Identifier ':' Expression ( ',' Identifier ':' Expression )*"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// FunctionCall = Expression '(' FunctionCallArguments ')'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// FunctionCallArguments = '{' NameValueList? '}'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                       | ExpressionList?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// NewExpression = 'new' TypeName"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// MemberAccess = Expression '.' Identifier"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// IndexAccess = Expression '[' Expression? ']'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// BooleanLiteral = 'true' | 'false'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// NumberLiteral = ( HexNumber | DecimalNumber ) (' ' NumberUnit)?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// NumberUnit = 'wei' | 'szabo' | 'finney' | 'ether'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//            | 'seconds' | 'minutes' | 'hours' | 'days' | 'weeks' | 'years'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// HexLiteral = 'hex' ('\"' ([0-9a-fA-F]{2})* '\"' | '\\'' ([0-9a-fA-F]{2})* '\\'')"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// StringLiteral = '\"' ([^\"\\r\\n\\\\] | '\\\\' .)* '\"'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// Identifier = [a-zA-Z_$] [a-zA-Z_$0-9]*"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// HexNumber = '0x' [0-9a-fA-F]+"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// DecimalNumber = [0-9]+ ( '.' [0-9]* )? ( [eE] [0-9]+ )?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// TupleExpression = '(' ( Expression? ( ',' Expression? )*  )? ')'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                 | '[' ( Expression  ( ',' Expression  )*  )? ']'"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression ('++' | '--')"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "int256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "keyword.operator",
+      "value": "++"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "++"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "keyword.operator",
+      "value": "--"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "--"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// NewExpression"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "CustomContract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "customContract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "new"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "CustomContract"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// IndexAccess"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "amounts"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "amounts"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "17"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "amounts"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "amounts"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// MemberAccess"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "customContract"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "customColor"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"red\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "customContract"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "customize"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "color"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "customContract"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "customColor"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// FunctionCall"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// FunctionCall = Expression '(' FunctionCallArguments ')'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// FunctionCallArguments = '{' NameValueList? '}'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                       | ExpressionList?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// NameValueList = Identifier ':' Expression ( ',' Identifier ':' Expression )*"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "result"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "customContract"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "customize"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "result"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "customContract"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "customize"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "result"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "customContract"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "customize"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "({"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "c"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "})"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "identifier",
+      "value": "doit"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "doit"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "doit"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "({"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "c"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "})"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "identifier",
+      "value": "doit"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "doit"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "doit"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "({"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "c"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "})"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// '(' Expression ')'"
+    }
+  ],
+  [
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "myInt"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// ('!' | '~' | 'delete' | '++' | '--' | '+' | '-') Expression"
+    }
+  ],
+  [
+    {
+      "type": "keyword.operator",
+      "value": "!"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "!"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword.operator",
+      "value": "~"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "~"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "delete"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword.operator",
+      "value": "++"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "++"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword.operator",
+      "value": "--"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "--"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword.operator",
+      "value": "+"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "+"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword.operator",
+      "value": "-"
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "-"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression '**' Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "**"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression ('*' | '/' | '%') Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "*"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "y"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "/"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "z"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "%"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression ('+' | '-') Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "+"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "y"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "-"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression ('<<' | '>>') Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "y"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": ">>"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression '&' Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "&"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression '^' Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "^"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression '|' Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " | "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression ('<' | '>' | '<=' | '>=') Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "lt"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "gt"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": ">"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "le"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "ge"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": ">="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression ('==' | '!=') Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "eq"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "=="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "ne"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "!="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression '&&' Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "and"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "&&"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression '||' Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "or"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "||"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression '?' Expression ':' Expression"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "outcome"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "conditional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": ">"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "10"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "?"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"yes\""
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ":"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"no\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Expression ('=' | '|=' | '^=' | '&=' | '<<=' | '>>=' | '+=' | '-=' | '*=' | '/=' | '%=') Expression"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "struct"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "KitchenSink"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "variable.language",
+      "value": "uint32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "color"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "KitchenSink"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "k"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "k"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "color"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0x00000000"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "k"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "color"
+    },
+    {
+      "type": "text",
+      "value": " |"
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0xff000000"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "k"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "color"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "^="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0x0f0f0f0f"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "k"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "color"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "&="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0xffff0000"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "25"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<<="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": ">>="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "+="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "-="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "*="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "/="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "v"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "volume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "%="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// PrimaryExpression = BooleanLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | NumberLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | HexLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | StringLiteral"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | TupleExpression"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | Identifier"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                   | ElementaryTypeNameExpression"
+    }
+  ],
+  [],
+  [],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// BooleanLiteral = 'true' | 'false'"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "truth"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.language.boolean",
+      "value": "true"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "truth"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.language.boolean",
+      "value": "false"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// NumberLiteral = ( HexNumber | DecimalNumber ) (' ' NumberUnit)?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// HexNumber = '0x' [0-9a-fA-F]+"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// DecimalNumber = [0-9]+ ( '.' [0-9]* )? ( [eE] [0-9]+ )?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// NumberUnit = 'wei' | 'szabo' | 'finney' | 'ether'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//            | 'seconds' | 'minutes' | 'hours' | 'days' | 'weeks' | 'years'"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "number"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0x123abcDEF"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "wei"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "number"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "123456"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "szabo"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "number"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "123456"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "finney"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "number"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "123456"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "ether"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "time"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "60"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "seconds"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "time"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "60"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "minutes"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "time"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "60"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hours"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "time"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "60"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "days"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "time"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "60"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "weeks"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "time"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "60"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "years"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "123.456"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "-123.456"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "123.456e12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "-123.456e12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "123.456E12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "-123.456E12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// grammar.txt is missing negative exponents (for really small numbers)."
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1.456e-12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "-1.456e-12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1.456E-12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "ufixed128x80"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fractional"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "-1.456E-12"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// HexLiteral = 'hex' ('\"' ([0-9a-fA-F]{2})* '\"' | '\\'' ([0-9a-fA-F]{2})* '\\'')"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bytes"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hexer"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hex"
+    },
+    {
+      "type": "string",
+      "value": "\"\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bytes"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hexer"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hex"
+    },
+    {
+      "type": "string",
+      "value": "\"0123456789abcdef0123456789ABCDEF\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bytes"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hexer"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hex"
+    },
+    {
+      "type": "string",
+      "value": "''"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "bytes"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hexer"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hex"
+    },
+    {
+      "type": "string",
+      "value": "'0123456789abcdef0123456789ABCDEF'"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// StringLiteral = '\"' ([^\"\\r\\n\\\\] | '\\\\' .)* '\"'"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "talker"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"Hello!\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "talker"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"I said "
+    },
+    {
+      "type": "constant.language.escape",
+      "value": "\\\""
+    },
+    {
+      "type": "string",
+      "value": "Hello!"
+    },
+    {
+      "type": "constant.language.escape",
+      "value": "\\\""
+    },
+    {
+      "type": "string",
+      "value": ", did you hear it?\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "talker"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"Look ma, \\"
+    }
+  ],
+  [
+    {
+      "type": "string",
+      "value": "multi-line strings! Just escape \\"
+    }
+  ],
+  [
+    {
+      "type": "string",
+      "value": "the newline with a back-slash.\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Identifier = [a-zA-Z_$] [a-zA-Z_$0-9]*"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "A"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "$"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a0b_$1c"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "A0b_$1c"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_0b_$1c"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "$0b_$1c"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// TupleExpression = '(' ( Expression? ( ',' Expression? )*  )? ')'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "//                 | '[' ( Expression  ( ',' Expression  )*  )? ']'"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// The \"[]\" bracket notation is not a tuple but an array literal. See below."
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "c"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "0"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "c"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Array Literal (not in grammar.txt)"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "memory"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "["
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "]"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Explicit Type Cast (not in grammar.txt AFAICT)"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint8"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "uint256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "a"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "variable.language",
+      "value": "address"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "o"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "address"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "otherContract"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  []
+]

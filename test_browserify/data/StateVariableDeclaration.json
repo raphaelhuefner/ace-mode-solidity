@@ -1,0 +1,515 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// StateVariableDeclaration = TypeName ( 'public' | 'internal' | 'private' | 'constant' )* Identifier ('=' Expression)? ';'"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "publicExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"publicExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "internal"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "internalExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"internalExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "private"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "privateExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"privateExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
+      "value": "constant"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "publicConstantExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"publicConstantExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "internal"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
+      "value": "constant"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "internalConstantExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"internalConstantExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "private"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
+      "value": "constant"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "privateConstantExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"privateConstantExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
+      "value": "constant"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "constantPublicExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"constantPublicExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
+      "value": "constant"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "internal"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "constantInternalExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"constantInternalExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
+      "value": "constant"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "private"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "constantPrivateExample"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"constantPrivateExample\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "publicExampleDefaultValue"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "internal"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "internalExampleDefaultValue"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "private"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "privateExampleDefaultValue"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [],
+  []
+]
