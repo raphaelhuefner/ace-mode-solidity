@@ -219,11 +219,21 @@ bytes[] hexer = hex'';
 bytes[] hexer = hex'0123456789abcdef0123456789ABCDEF';
 
 // StringLiteral = '"' ([^"\r\n\\] | '\\' .)* '"'
+string talker = "";
 string talker = "Hello!";
 string talker = "I said \"Hello!\", did you hear it?";
 string talker = "Look ma, \
 multi-line strings! Just escape \
 the newline with a back-slash.";
+
+// https://solidity.readthedocs.io/en/develop/types.html#string-literals
+// ^^ says both single-quoted and double-quoted string literals, even if
+// grammar.txt has only double-quoted.
+string greet = '';
+string greet = 'Hello World!';
+string greet = 'Hello \'World\'!';
+string greet = 'Hello \
+World!';
 
 // Identifier = [a-zA-Z_$] [a-zA-Z_$0-9]*
 uint a = 0;

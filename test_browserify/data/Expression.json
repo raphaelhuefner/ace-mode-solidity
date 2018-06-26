@@ -4333,6 +4333,40 @@
     },
     {
       "type": "string",
+      "value": "\"\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "talker"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
       "value": "\"Hello!\""
     },
     {
@@ -4430,6 +4464,183 @@
     {
       "type": "string",
       "value": "the newline with a back-slash.\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// https://solidity.readthedocs.io/en/develop/types.html#string-literals"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// ^^ says both single-quoted and double-quoted string literals, even if"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// grammar.txt has only double-quoted."
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "greet"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "''"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "greet"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "'Hello World!'"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "greet"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "'Hello "
+    },
+    {
+      "type": "constant.language.escape",
+      "value": "\\'"
+    },
+    {
+      "type": "string",
+      "value": "World"
+    },
+    {
+      "type": "constant.language.escape",
+      "value": "\\'"
+    },
+    {
+      "type": "string",
+      "value": "!'"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "variable.language",
+      "value": "string"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "greet"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "'Hello \\"
+    }
+  ],
+  [
+    {
+      "type": "string",
+      "value": "World!'"
     },
     {
       "type": "punctuation.operator",
