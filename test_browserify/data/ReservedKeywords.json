@@ -1,0 +1,225 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// see https://solidity.readthedocs.io/en/develop/miscellaneous.html#reserved-keywords"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "identifier",
+      "value": "abstract"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "after"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "alias"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "apply"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "auto"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "case"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "catch"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "copyof"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "default"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "define"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "final"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "immutable"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "implements"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "in"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "inline"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "let"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "macro"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "match"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "mutable"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "null"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "of"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "override"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "partial"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "promise"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "reference"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "relocatable"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "sealed"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "sizeof"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "static"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "supports"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "switch"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "try"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "type"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "typedef"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "typeof"
+    }
+  ],
+  [
+    {
+      "type": "identifier",
+      "value": "unchecked"
+    }
+  ]
+]

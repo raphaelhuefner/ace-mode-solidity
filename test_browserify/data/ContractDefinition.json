@@ -393,43 +393,31 @@
   [
     {
       "type": "comment",
-      "value": "// grammar.txt seems to define something like \"inheritance parameters\":"
+      "value": "// constructor (not in grammar.txt)"
     }
   ],
   [
     {
       "type": "comment",
-      "value": "// > InheritanceSpecifier = UserDefinedTypeName ( '(' Expression ( ',' Expression )* ')' )?"
+      "value": "// But see https://solidity.readthedocs.io/en/develop/contracts.html#constructors"
     }
   ],
   [
     {
       "type": "comment",
-      "value": "// I can not find anything like that in the current Solidity documentation, not even the \"develop\" branch."
+      "value": "// Also see following inheritance section for base constructors as \"modifiers\" for"
     }
   ],
   [
     {
       "type": "comment",
-      "value": "// Also, I can't see where that parameter could get \"received\" in the definition of a parent."
+      "value": "// the current constructor."
     }
   ],
   [
     {
-      "type": "comment",
-      "value": "// All I can understand this as are C++ templates, and that this is \"reserved syntax\", like \"reserved keywords\"."
-    }
-  ],
-  [
-    {
-      "type": "comment",
-      "value": "// Here is my best guess as to how it could look like:"
-    }
-  ],
-  [
-    {
-      "type": "identifier",
-      "value": "interface"
+      "type": "keyword",
+      "value": "contract"
     },
     {
       "type": "text",
@@ -437,7 +425,295 @@
     },
     {
       "type": "identifier",
-      "value": "FacyMcFaceface"
+      "value": "Constructed"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "variable.language",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "name"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "constructor"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_name"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "identifier",
+      "value": "name"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_name"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// InheritanceSpecifier = UserDefinedTypeName ( '(' Expression ( ',' Expression )* ')' )?"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// The above expression(s) ^^ is/are a way to specify arguments for base contructors."
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// See https://solidity.readthedocs.io/en/develop/contracts.html#constructors"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Base"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "constructor"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_x"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "x"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_x"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Derived1"
     },
     {
       "type": "text",
@@ -453,7 +729,7 @@
     },
     {
       "type": "identifier",
-      "value": "So"
+      "value": "Base"
     },
     {
       "type": "paren.lparen",
@@ -461,31 +737,7 @@
     },
     {
       "type": "constant.numeric",
-      "value": "2016"
-    },
-    {
-      "type": "paren.rparen",
-      "value": ")"
-    },
-    {
-      "type": "punctuation.operator",
-      "value": ","
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "identifier",
-      "value": "Able"
-    },
-    {
-      "type": "paren.lparen",
-      "value": "("
-    },
-    {
-      "type": "identifier",
-      "value": "Meme"
+      "value": "7"
     },
     {
       "type": "paren.rparen",
@@ -498,6 +750,187 @@
     {
       "type": "paren.lparen",
       "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "constructor"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_y"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Derived2"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "is"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Base"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "identifier",
+      "value": "constructor"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_y"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "Base"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "_y"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "*"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "_y"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "public"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
     }
   ],
   [

@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// https://solidity.readthedocs.io/en/develop/layout-of-source-files.html#comments"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Single-line comment"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "/* Asterisk comment */"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "/*"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": " * Multi-line comment"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": " */"
+    }
+  ],
+  []
+]

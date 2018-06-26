@@ -1,0 +1,1106 @@
+[
+  [
+    {
+      "type": "comment",
+      "value": "// https://solidity.readthedocs.io/en/develop/layout-of-source-files.html#comments"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Double-Asterisk doc comments"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment.doc",
+      "value": "/** "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@title"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Shape calculator. */"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "ShapeCalculator"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment.doc",
+      "value": "/** "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@dev"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Calculates a rectangle's surface and perimeter."
+    }
+  ],
+  [
+    {
+      "type": "comment.doc",
+      "value": "      * "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@param"
+    },
+    {
+      "type": "comment.doc",
+      "value": " w Width of the rectangle."
+    }
+  ],
+  [
+    {
+      "type": "comment.doc",
+      "value": "      * "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@param"
+    },
+    {
+      "type": "comment.doc",
+      "value": " h Height of the rectangle."
+    }
+  ],
+  [
+    {
+      "type": "comment.doc",
+      "value": "      * "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@return"
+    },
+    {
+      "type": "comment.doc",
+      "value": " s The calculated surface."
+    }
+  ],
+  [
+    {
+      "type": "comment.doc",
+      "value": "      * "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@return"
+    },
+    {
+      "type": "comment.doc",
+      "value": " p The calculated perimeter."
+    }
+  ],
+  [
+    {
+      "type": "comment.doc",
+      "value": "      */"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "function"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "entity.name.function",
+      "value": "rectangle"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "w"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ", "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "h"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "returns"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "s"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "p"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "        "
+    },
+    {
+      "type": "identifier",
+      "value": "s"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "w"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "*"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "h"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "        "
+    },
+    {
+      "type": "identifier",
+      "value": "p"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "*"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "w"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "+"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "h"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// Triple-Slash doc comments"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "/// @title Shape calculator."
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "ShapeCalculator2"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @dev Calculates a rectangle's surface and perimeter."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @param w Width of the rectangle."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @param h Height of the rectangle."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @return s The calculated surface."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @return p The calculated perimeter."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "function"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "entity.name.function",
+      "value": "rectangle"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "w"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ", "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "h"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "returns"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "s"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "variable.language",
+      "value": "uint"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "p"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "        "
+    },
+    {
+      "type": "identifier",
+      "value": "s"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "w"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "*"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "h"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "        "
+    },
+    {
+      "type": "identifier",
+      "value": "p"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "*"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "w"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "+"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "h"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "/// @title A simulator for Bugs Bunny, the most famous Rabbit"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "/// @author Warned Bros"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "/// @notice You can use this contract for only the most basic simulation"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "/// @dev All function calls are currently implement without side effects"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "BugsBunny"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @author Bob Clampett"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @notice Determine if Bugs will accept `(_food)` to eat"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @dev String comparison may be inefficient"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @param _food The name of a food to evaluate (English)"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment",
+      "value": "/// @return true if Bugs will eat it, false otherwise"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "function"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "entity.name.function",
+      "value": "doesEat"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.parameter",
+      "value": "string"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "_food"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "external"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "pure"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "returns"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.language",
+      "value": "bool"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "        "
+    },
+    {
+      "type": "keyword",
+      "value": "return"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "keccak256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "_food"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "=="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "keccak256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string",
+      "value": "\"carrot\""
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format#dynamic-expressions"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "ShowcaseDynamicComments"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "comment",
+      "value": "/// @notice Send `(valueInmGAV / 1000).fixed(0,3)` GAV from the account of "
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "comment",
+      "value": "/// `message.caller.address()` to an account accessible only by `to.address()`"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "storage.type",
+      "value": "function"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "entity.name.function",
+      "value": "send"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.parameter",
+      "value": "address"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "to"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ", "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint256"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "valueInmGAV"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  []
+]

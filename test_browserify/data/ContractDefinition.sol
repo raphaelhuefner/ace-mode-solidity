@@ -34,11 +34,29 @@ contract MultipleInheritance is Awesome, Multiple, Inheritable {
 library BetterBeenDecentralized is Alexandria, Ashurbanipal, Aksum {
 }
 
-// grammar.txt seems to define something like "inheritance parameters":
-// > InheritanceSpecifier = UserDefinedTypeName ( '(' Expression ( ',' Expression )* ')' )?
-// I can not find anything like that in the current Solidity documentation, not even the "develop" branch.
-// Also, I can't see where that parameter could get "received" in the definition of a parent.
-// All I can understand this as are C++ templates, and that this is "reserved syntax", like "reserved keywords".
-// Here is my best guess as to how it could look like:
-interface FacyMcFaceface is So(2016), Able(Meme) {
+// constructor (not in grammar.txt)
+// But see https://solidity.readthedocs.io/en/develop/contracts.html#constructors
+// Also see following inheritance section for base constructors as "modifiers" for
+// the current constructor.
+contract Constructed {
+  bytes32 name;
+  constructor(bytes32 _name) public {
+    name = _name;
+  }
+}
+
+// InheritanceSpecifier = UserDefinedTypeName ( '(' Expression ( ',' Expression )* ')' )?
+// The above expression(s) ^^ is/are a way to specify arguments for base contructors.
+// See https://solidity.readthedocs.io/en/develop/contracts.html#constructors
+contract Base {
+  uint x;
+  constructor(uint _x) public { x = _x; }
+}
+
+contract Derived1 is Base(7) {
+  constructor(uint _y) public {}
+}
+
+contract Derived2 is Base {
+  constructor(uint _y) Base(_y * _y) public {}
 }
