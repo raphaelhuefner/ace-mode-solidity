@@ -221,6 +221,8 @@ bytes[] hexer = hex'0123456789abcdef0123456789ABCDEF';
 // StringLiteral = '"' ([^"\r\n\\] | '\\' .)* '"'
 string talker = "";
 string talker = "Hello!";
+string talker = "Hello \x26\x03!";
+string talker = "Hello \u2603!";
 string talker = "I said \"Hello!\", did you hear it?";
 string talker = "Look ma, \
 multi-line strings! Just escape \
@@ -231,6 +233,8 @@ the newline with a back-slash.";
 // grammar.txt has only double-quoted.
 string greet = '';
 string greet = 'Hello World!';
+string greet = 'Hello \x26\x03!';
+string greet = 'Hello \u2603!';
 string greet = 'Hello \'World\'!';
 string greet = 'Hello \
 World!';
