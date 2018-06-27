@@ -566,7 +566,7 @@
   [
     {
       "type": "comment",
-      "value": "// See https://solidity.readthedocs.io/en/develop/contracts.html#constructors"
+      "value": "// See https://solidity.readthedocs.io/en/develop/contracts.html#arguments-for-base-constructors"
     }
   ],
   [

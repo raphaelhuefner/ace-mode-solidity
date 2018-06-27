@@ -47,7 +47,7 @@ contract Constructed {
 
 // InheritanceSpecifier = UserDefinedTypeName ( '(' Expression ( ',' Expression )* ')' )?
 // The above expression(s) ^^ is/are a way to specify arguments for base contructors.
-// See https://solidity.readthedocs.io/en/develop/contracts.html#constructors
+// See https://solidity.readthedocs.io/en/develop/contracts.html#arguments-for-base-constructors
 contract Base {
   uint x;
   constructor(uint _x) public { x = _x; }
