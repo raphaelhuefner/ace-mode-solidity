@@ -27,6 +27,17 @@ var SolidityHighlightRules = function(options) {
         "u[0-9a-fA-F]{4}|" + // unicode
         ".)"; // stuff like "\r" "\n" "\t" etc.
 
+    var commentWipMarkerRe = "\\b(?:TODO|FIXME|XXX|HACK)\\b";
+    var commentWipMarkerRule = {
+        token : "comment.doc.tag.storage.type",
+        regex : commentWipMarkerRe
+    };
+
+    var natSpecRule = {
+        token : "comment.doc.tag",
+        regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
+    };
+
     this.$rules = {
         "start" : [
             {
@@ -102,10 +113,8 @@ var SolidityHighlightRules = function(options) {
             }
         ],
         "comment" : [
+            commentWipMarkerRule,
             {
-                token : "comment.doc.tag.storage.type",
-                regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
-            }, {
                 token : "comment",
                 regex : "\\*\\/",
                 next : "start"
@@ -115,10 +124,8 @@ var SolidityHighlightRules = function(options) {
             }
         ],
         "line_comment" : [
+            commentWipMarkerRule,
             {
-                token : "comment.doc.tag.storage.type",
-                regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
-            }, {
                 token : "comment",
                 regex : "$|^",
                 next : "start"
@@ -128,13 +135,9 @@ var SolidityHighlightRules = function(options) {
             }
         ],
         "doc_comment" : [
+            commentWipMarkerRule,
+            natSpecRule,
             {
-                token : "comment.doc.tag.storage.type",
-                regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
-            }, {
-                token : "comment.doc.tag",
-                regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
-            }, {
                 token : "comment.doc", // closing comment
                 regex : "\\*\\/",
                 next  : "start"
@@ -144,13 +147,9 @@ var SolidityHighlightRules = function(options) {
             }
         ],
         "doc_line_comment" : [
+            commentWipMarkerRule,
+            natSpecRule,
             {
-                token : "comment.doc.tag.storage.type",
-                regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
-            }, {
-                token : "comment.doc.tag",
-                regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
-            }, {
                 token : "comment.doc",
                 regex : "$|^",
                 next  : "start"
