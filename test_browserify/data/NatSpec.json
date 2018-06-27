@@ -385,8 +385,16 @@
   [],
   [
     {
-      "type": "comment",
-      "value": "/// @title Shape calculator."
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@title"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Shape calculator."
     }
   ],
   [
@@ -417,8 +425,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @dev Calculates a rectangle's surface and perimeter."
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@dev"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Calculates a rectangle's surface and perimeter."
     }
   ],
   [
@@ -427,8 +443,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @param w Width of the rectangle."
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@param"
+    },
+    {
+      "type": "comment.doc",
+      "value": " w Width of the rectangle."
     }
   ],
   [
@@ -437,8 +461,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @param h Height of the rectangle."
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@param"
+    },
+    {
+      "type": "comment.doc",
+      "value": " h Height of the rectangle."
     }
   ],
   [
@@ -447,8 +479,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @return s The calculated surface."
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@return"
+    },
+    {
+      "type": "comment.doc",
+      "value": " s The calculated surface."
     }
   ],
   [
@@ -457,8 +497,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @return p The calculated perimeter."
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@return"
+    },
+    {
+      "type": "comment.doc",
+      "value": " p The calculated perimeter."
     }
   ],
   [
@@ -717,26 +765,58 @@
   [],
   [
     {
-      "type": "comment",
-      "value": "/// @title A simulator for Bugs Bunny, the most famous Rabbit"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@title"
+    },
+    {
+      "type": "comment.doc",
+      "value": " A simulator for Bugs Bunny, the most famous Rabbit"
     }
   ],
   [
     {
-      "type": "comment",
-      "value": "/// @author Warned Bros"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@author"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Warned Bros"
     }
   ],
   [
     {
-      "type": "comment",
-      "value": "/// @notice You can use this contract for only the most basic simulation"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@notice"
+    },
+    {
+      "type": "comment.doc",
+      "value": " You can use this contract for only the most basic simulation"
     }
   ],
   [
     {
-      "type": "comment",
-      "value": "/// @dev All function calls are currently implement without side effects"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@dev"
+    },
+    {
+      "type": "comment.doc",
+      "value": " All function calls are currently implement without side effects"
     }
   ],
   [
@@ -767,8 +847,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @author Bob Clampett"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@author"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Bob Clampett"
     }
   ],
   [
@@ -777,8 +865,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @notice Determine if Bugs will accept `(_food)` to eat"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@notice"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Determine if Bugs will accept `(_food)` to eat"
     }
   ],
   [
@@ -787,8 +883,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @dev String comparison may be inefficient"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@dev"
+    },
+    {
+      "type": "comment.doc",
+      "value": " String comparison may be inefficient"
     }
   ],
   [
@@ -797,8 +901,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @param _food The name of a food to evaluate (English)"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@param"
+    },
+    {
+      "type": "comment.doc",
+      "value": " _food The name of a food to evaluate (English)"
     }
   ],
   [
@@ -807,8 +919,16 @@
       "value": "    "
     },
     {
-      "type": "comment",
-      "value": "/// @return true if Bugs will eat it, false otherwise"
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@return"
+    },
+    {
+      "type": "comment.doc",
+      "value": " true if Bugs will eat it, false otherwise"
     }
   ],
   [
@@ -1010,8 +1130,16 @@
       "value": "  "
     },
     {
-      "type": "comment",
-      "value": "/// @notice Send `(valueInmGAV / 1000).fixed(0,3)` GAV from the account of "
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@notice"
+    },
+    {
+      "type": "comment.doc",
+      "value": " Send `(valueInmGAV / 1000).fixed(0,3)` GAV from the account of "
     }
   ],
   [
@@ -1020,7 +1148,7 @@
       "value": "  "
     },
     {
-      "type": "comment",
+      "type": "comment.doc",
       "value": "/// `message.caller.address()` to an account accessible only by `to.address()`"
     }
   ],

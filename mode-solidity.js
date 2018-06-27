@@ -34,6 +34,10 @@ var SolidityHighlightRules = function(options) {
                 regex : "\\/\\*(?=\\*)",
                 next  : "doc_comment"
             }, {
+                token : "comment.doc", // triple slash "NatSpec" doc comment
+                regex : "\\/\\/\\/",
+                next : "doc_line_comment"
+            }, {
                 token : "comment", // multi line comment
                 regex : "\\/\\*",
                 next : "comment"
@@ -137,6 +141,22 @@ var SolidityHighlightRules = function(options) {
             }, {
                 defaultToken : "comment.doc",
                 caseInsensitive: true
+            }
+        ],
+        "doc_line_comment" : [
+            {
+                token : "comment.doc.tag.storage.type",
+                regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
+            }, {
+                token : "comment.doc.tag",
+                regex : "@[\\w\\d_]+" // TODO: fix email addresses
+            }, {
+                token : "comment.doc",
+                regex : "$|^",
+                next  : "start"
+            }, {
+                defaultToken : "comment.doc",
+                caseInsensitive : true
             }
         ],
         "qqstring" : [
