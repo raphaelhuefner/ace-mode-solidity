@@ -133,7 +133,7 @@ var SolidityHighlightRules = function(options) {
                 regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
             }, {
                 token : "comment.doc.tag",
-                regex : "@[\\w\\d_]+" // TODO: fix email addresses
+                regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
             }, {
                 token : "comment.doc", // closing comment
                 regex : "\\*\\/",
@@ -149,7 +149,7 @@ var SolidityHighlightRules = function(options) {
                 regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
             }, {
                 token : "comment.doc.tag",
-                regex : "@[\\w\\d_]+" // TODO: fix email addresses
+                regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
             }, {
                 token : "comment.doc",
                 regex : "$|^",

@@ -1102,6 +1102,21 @@
       "value": "// https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format#dynamic-expressions"
     }
   ],
+  [],
+  [
+    {
+      "type": "comment.doc",
+      "value": "/// "
+    },
+    {
+      "type": "comment.doc.tag",
+      "value": "@author"
+    },
+    {
+      "type": "comment.doc",
+      "value": " email.address@not-highlighted.com"
+    }
+  ],
   [
     {
       "type": "keyword",

@@ -49,6 +49,8 @@ contract BugsBunny {
 }
 
 // https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format#dynamic-expressions
+
+/// @author email.address@not-highlighted.com
 contract ShowcaseDynamicComments {
   /// @notice Send `(valueInmGAV / 1000).fixed(0,3)` GAV from the account of 
   /// `message.caller.address()` to an account accessible only by `to.address()`
