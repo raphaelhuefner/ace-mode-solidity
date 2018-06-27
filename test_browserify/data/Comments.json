@@ -38,5 +38,52 @@
       "value": " */"
     }
   ],
+  [],
+  [
+    {
+      "type": "comment",
+      "value": "// WIP markers:"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// "
+    },
+    {
+      "type": "comment.doc.tag.storage.type",
+      "value": "TODO"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// "
+    },
+    {
+      "type": "comment.doc.tag.storage.type",
+      "value": "FIXME"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// "
+    },
+    {
+      "type": "comment.doc.tag.storage.type",
+      "value": "XXX"
+    }
+  ],
+  [
+    {
+      "type": "comment",
+      "value": "// "
+    },
+    {
+      "type": "comment.doc.tag.storage.type",
+      "value": "HACK"
+    }
+  ],
   []
 ]

@@ -7,3 +7,9 @@
 /*
  * Multi-line comment
  */
+
+// WIP markers:
+// TODO
+// FIXME
+// XXX
+// HACK
