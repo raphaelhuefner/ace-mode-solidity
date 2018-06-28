@@ -1,38 +1,38 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// FunctionDefinition = 'function' Identifier? ParameterList"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                      ( ModifierInvocation | StateMutability | 'external' | 'public' | 'internal' | 'private' )*"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                      ( 'returns' ParameterList )? ( ';' | Block )"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Return = 'return' Expression?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Throw = 'throw'"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Order: ModifierInvocation StateMutability Visibility"
     }
   ],
@@ -2187,7 +2187,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Order: StateMutability Visibility ModifierInvocation"
     }
   ],
@@ -4342,7 +4342,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Order: Visibility StateMutability ModifierInvocation"
     }
   ],
@@ -6497,7 +6497,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Leave off some/all optional parts."
     }
   ],
@@ -7328,7 +7328,7 @@
       "value": "  "
     },
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NOTE: From version 0.4.13 the throw keyword is deprecated and will be phased out in the future."
     }
   ],

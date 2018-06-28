@@ -1,19 +1,19 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ForStatement = 'for' '(' (SimpleStatement)? ';' (Expression)? ';' (ExpressionStatement)? ')' Statement"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Continue = 'continue'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Break = 'break'"
     }
   ],

@@ -1,19 +1,19 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ImportDirective = 'import' StringLiteral ('as' Identifier)? ';'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//         | 'import' ('*' | Identifier) ('as' Identifier)? 'from' StringLiteral ';'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//         | 'import' '{' Identifier ('as' Identifier)? ( ',' Identifier ('as' Identifier)? )* '}' 'from' StringLiteral ';'"
     }
   ],

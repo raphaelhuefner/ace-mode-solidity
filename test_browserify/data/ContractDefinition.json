@@ -1,19 +1,19 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ContractDefinition = ( 'contract' | 'library' | 'interface' ) Identifier"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                      ( 'is' InheritanceSpecifier (',' InheritanceSpecifier )* )?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                      '{' ContractPart* '}'"
     }
   ],
@@ -47,7 +47,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)"
     }
   ],
@@ -82,7 +82,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// https://en.wikipedia.org/wiki/Indentation_style#Allman_style"
     }
   ],
@@ -287,37 +287,37 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// (see https://solidity.readthedocs.io/en/develop/contracts.html#libraries )"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Restrictions for libraries in comparison to contracts:"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// - No state variables"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// - Cannot inherit nor be inherited"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// - Cannot receive Ether"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// (These might be lifted at a later point.)"
     }
   ],
@@ -392,25 +392,25 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// constructor (not in grammar.txt)"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// But see https://solidity.readthedocs.io/en/develop/contracts.html#constructors"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Also see following inheritance section for base constructors as \"modifiers\" for"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// the current constructor."
     }
   ],
@@ -553,19 +553,19 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// InheritanceSpecifier = UserDefinedTypeName ( '(' Expression ( ',' Expression )* ')' )?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// The above expression(s) ^^ is/are a way to specify arguments for base contructors."
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// See https://solidity.readthedocs.io/en/develop/contracts.html#arguments-for-base-constructors"
     }
   ],

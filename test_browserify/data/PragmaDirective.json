@@ -1,13 +1,13 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Pragma actually parses anything up to the trailing ';' to be fully forward-compatible."
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// PragmaDirective = 'pragma' Identifier ([^;]+) ';'"
     }
   ],

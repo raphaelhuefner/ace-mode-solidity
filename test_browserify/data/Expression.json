@@ -1,344 +1,344 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Precedence by order (see github.com/ethereum/solidity/pull/732)"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   = Expression ('++' | '--')"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | NewExpression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | IndexAccess"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | MemberAccess"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | FunctionCall"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | '(' Expression ')'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | ('!' | '~' | 'delete' | '++' | '--' | '+' | '-') Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression '**' Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression ('*' | '/' | '%') Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression ('+' | '-') Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression ('<<' | '>>') Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression '&' Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression '^' Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression '|' Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression ('<' | '>' | '<=' | '>=') Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression ('==' | '!=') Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression '&&' Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression '||' Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression '?' Expression ':' Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | Expression ('=' | '|=' | '^=' | '&=' | '<<=' | '>>=' | '+=' | '-=' | '*=' | '/=' | '%=') Expression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//   | PrimaryExpression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// PrimaryExpression = BooleanLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | NumberLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | HexLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | StringLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | TupleExpression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | Identifier"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | ElementaryTypeNameExpression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ExpressionList = Expression ( ',' Expression )*"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NameValueList = Identifier ':' Expression ( ',' Identifier ':' Expression )*"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// FunctionCall = Expression '(' FunctionCallArguments ')'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// FunctionCallArguments = '{' NameValueList? '}'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                       | ExpressionList?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NewExpression = 'new' TypeName"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// MemberAccess = Expression '.' Identifier"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// IndexAccess = Expression '[' Expression? ']'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// BooleanLiteral = 'true' | 'false'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NumberLiteral = ( HexNumber | DecimalNumber ) (' ' NumberUnit)?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NumberUnit = 'wei' | 'szabo' | 'finney' | 'ether'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//            | 'seconds' | 'minutes' | 'hours' | 'days' | 'weeks' | 'years'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// HexLiteral = 'hex' ('\"' ([0-9a-fA-F]{2})* '\"' | '\\'' ([0-9a-fA-F]{2})* '\\'')"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// StringLiteral = '\"' ([^\"\\r\\n\\\\] | '\\\\' .)* '\"'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Identifier = [a-zA-Z_$] [a-zA-Z_$0-9]*"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// HexNumber = '0x' [0-9a-fA-F]+"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// DecimalNumber = [0-9]+ ( '.' [0-9]* )? ( [eE] [0-9]+ )?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// TupleExpression = '(' ( Expression? ( ',' Expression? )*  )? ')'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                 | '[' ( Expression  ( ',' Expression  )*  )? ']'"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression ('++' | '--')"
     }
   ],
@@ -443,7 +443,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NewExpression"
     }
   ],
@@ -500,7 +500,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// IndexAccess"
     }
   ],
@@ -655,7 +655,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// MemberAccess"
     }
   ],
@@ -764,31 +764,31 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// FunctionCall"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// FunctionCall = Expression '(' FunctionCallArguments ')'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// FunctionCallArguments = '{' NameValueList? '}'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                       | ExpressionList?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NameValueList = Identifier ':' Expression ( ',' Identifier ':' Expression )*"
     }
   ],
@@ -1307,7 +1307,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// '(' Expression ')'"
     }
   ],
@@ -1350,7 +1350,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ('!' | '~' | 'delete' | '++' | '--' | '+' | '-') Expression"
     }
   ],
@@ -1579,7 +1579,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression '**' Expression"
     }
   ],
@@ -1636,7 +1636,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression ('*' | '/' | '%') Expression"
     }
   ],
@@ -1793,7 +1793,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression ('+' | '-') Expression"
     }
   ],
@@ -1900,7 +1900,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression ('<<' | '>>') Expression"
     }
   ],
@@ -2007,7 +2007,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression '&' Expression"
     }
   ],
@@ -2064,7 +2064,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression '^' Expression"
     }
   ],
@@ -2121,7 +2121,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression '|' Expression"
     }
   ],
@@ -2170,7 +2170,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression ('<' | '>' | '<=' | '>=') Expression"
     }
   ],
@@ -2377,7 +2377,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression ('==' | '!=') Expression"
     }
   ],
@@ -2484,7 +2484,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression '&&' Expression"
     }
   ],
@@ -2541,7 +2541,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression '||' Expression"
     }
   ],
@@ -2598,7 +2598,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression '?' Expression ':' Expression"
     }
   ],
@@ -2687,7 +2687,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Expression ('=' | '|=' | '^=' | '&=' | '<<=' | '>>=' | '+=' | '-=' | '*=' | '/=' | '%=') Expression"
     }
   ],
@@ -3192,43 +3192,43 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// PrimaryExpression = BooleanLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | NumberLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | HexLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | StringLiteral"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | TupleExpression"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | Identifier"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                   | ElementaryTypeNameExpression"
     }
   ],
@@ -3237,7 +3237,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// BooleanLiteral = 'true' | 'false'"
     }
   ],
@@ -3312,31 +3312,31 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NumberLiteral = ( HexNumber | DecimalNumber ) (' ' NumberUnit)?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// HexNumber = '0x' [0-9a-fA-F]+"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// DecimalNumber = [0-9]+ ( '.' [0-9]* )? ( [eE] [0-9]+ )?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// NumberUnit = 'wei' | 'szabo' | 'finney' | 'ether'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//            | 'seconds' | 'minutes' | 'hours' | 'days' | 'weeks' | 'years'"
     }
   ],
@@ -3968,7 +3968,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// grammar.txt is missing negative exponents (for really small numbers)."
     }
   ],
@@ -4111,7 +4111,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// HexLiteral = 'hex' ('\"' ([0-9a-fA-F]{2})* '\"' | '\\'' ([0-9a-fA-F]{2})* '\\'')"
     }
   ],
@@ -4302,7 +4302,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// StringLiteral = '\"' ([^\"\\r\\n\\\\] | '\\\\' .)* '\"'"
     }
   ],
@@ -4557,19 +4557,19 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// https://solidity.readthedocs.io/en/develop/types.html#string-literals"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ^^ says both single-quoted and double-quoted string literals, even if"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// grammar.txt has only double-quoted."
     }
   ],
@@ -4818,7 +4818,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Identifier = [a-zA-Z_$] [a-zA-Z_$0-9]*"
     }
   ],
@@ -5097,19 +5097,19 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// TupleExpression = '(' ( Expression? ( ',' Expression? )*  )? ')'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                 | '[' ( Expression  ( ',' Expression  )*  )? ']'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// The \"[]\" bracket notation is not a tuple but an array literal. See below."
     }
   ],
@@ -5308,7 +5308,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Array Literal (not in grammar.txt)"
     }
   ],
@@ -5413,7 +5413,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Explicit Type Cast (not in grammar.txt AFAICT)"
     }
   ],

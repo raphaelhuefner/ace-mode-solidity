@@ -1,7 +1,7 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// WhileStatement = 'while' '(' Expression ')' Statement"
     }
   ],

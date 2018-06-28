@@ -1,13 +1,13 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ModifierDefinition = 'modifier' Identifier ParameterList? Block"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// PlaceholderStatement = '_'"
     }
   ],

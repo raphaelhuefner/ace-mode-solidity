@@ -1,13 +1,13 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// StructDefinition = 'struct' Identifier '{'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                      ( VariableDeclaration ';' (VariableDeclaration ';')* ) '}'"
     }
   ],

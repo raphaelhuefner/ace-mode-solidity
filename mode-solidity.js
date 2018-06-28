@@ -32,31 +32,31 @@ var SolidityHighlightRules = function(options) {
 
     var commentWipMarkerRe = "\\b(?:TODO|FIXME|XXX|HACK)\\b";
     var commentWipMarkerRule = {
-        token : "comment.doc.tag.storage.type",
+        token : "comment.doc.documentation.tag.storage.type", // TODO ".block" vs. ".line"
         regex : commentWipMarkerRe
     };
 
     var natSpecRule = {
-        token : "comment.doc.tag",
+        token : "comment.doc.documentation.tag", // TODO ".block" vs. ".line"
         regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
     };
 
     this.$rules = {
         "start" : [
             {
-                token : "comment.doc", // doc comment
+                token : "comment.block.doc.documentation", // doc comment
                 regex : "\\/\\*(?=\\*)",
                 next  : "doc_comment"
             }, {
-                token : "comment.doc", // triple slash "NatSpec" doc comment
+                token : "comment.line.triple-slash.double-slash.doc.documentation", // triple slash "NatSpec" doc comment
                 regex : "\\/\\/\\/",
                 next : "doc_line_comment"
             }, {
-                token : "comment", // multi line comment
+                token : "comment.block", // multi line comment
                 regex : "\\/\\*",
                 next : "comment"
             }, {
-                token : "comment",
+                token : "comment.line.double-slash",
                 regex : "\\/\\/",
                 next : "line_comment"
             }, {
@@ -132,22 +132,22 @@ var SolidityHighlightRules = function(options) {
         "comment" : [
             commentWipMarkerRule,
             {
-                token : "comment",
+                token : "comment.block",
                 regex : "\\*\\/",
                 next : "start"
             }, {
-                defaultToken : "comment",
+                defaultToken : "comment.block",
                 caseInsensitive: true
             }
         ],
         "line_comment" : [
             commentWipMarkerRule,
             {
-                token : "comment",
+                token : "comment.line.double-slash",
                 regex : "$|^",
                 next : "start"
             }, {
-                defaultToken : "comment",
+                defaultToken : "comment.line.double-slash",
                 caseInsensitive: true
             }
         ],
@@ -155,11 +155,11 @@ var SolidityHighlightRules = function(options) {
             commentWipMarkerRule,
             natSpecRule,
             {
-                token : "comment.doc", // closing comment
+                token : "comment.block.doc.documentation", // closing comment
                 regex : "\\*\\/",
                 next  : "start"
             }, {
-                defaultToken : "comment.doc",
+                defaultToken : "comment.block.doc.documentation",
                 caseInsensitive: true
             }
         ],
@@ -167,11 +167,11 @@ var SolidityHighlightRules = function(options) {
             commentWipMarkerRule,
             natSpecRule,
             {
-                token : "comment.doc",
+                token : "comment.line.triple-slash.double-slash.doc.documentation",
                 regex : "$|^",
                 next  : "start"
             }, {
-                defaultToken : "comment.doc",
+                defaultToken : "comment.line.triple-slash.double-slash.doc.documentation",
                 caseInsensitive : true
             }
         ],

@@ -1,87 +1,87 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// https://solidity.readthedocs.io/en/develop/layout-of-source-files.html#comments"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Single-line comment"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.block",
       "value": "/* Asterisk comment */"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.block",
       "value": "/*"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.block",
       "value": " * Multi-line comment"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.block",
       "value": " */"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// WIP markers:"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// "
     },
     {
-      "type": "comment.doc.tag.storage.type",
+      "type": "comment.doc.documentation.tag.storage.type",
       "value": "TODO"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// "
     },
     {
-      "type": "comment.doc.tag.storage.type",
+      "type": "comment.doc.documentation.tag.storage.type",
       "value": "FIXME"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// "
     },
     {
-      "type": "comment.doc.tag.storage.type",
+      "type": "comment.doc.documentation.tag.storage.type",
       "value": "XXX"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// "
     },
     {
-      "type": "comment.doc.tag.storage.type",
+      "type": "comment.doc.documentation.tag.storage.type",
       "value": "HACK"
     }
   ],

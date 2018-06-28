@@ -1,86 +1,86 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// VariableDefinition = ('var' IdentifierList | VariableDeclaration | '(' VariableDeclaration? (',' VariableDeclaration? )* ')' ) ( '=' Expression )?"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// semantic restriction: mappings and structs (recursively) containing mappings"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// are not allowed in argument lists"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// VariableDeclaration = TypeName StorageLocation? Identifier"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// TypeName = ElementaryTypeName"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//          | UserDefinedTypeName"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//          | Mapping"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//          | ArrayTypeName"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//          | FunctionTypeName"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// StorageLocation = 'memory' | 'storage' | 'calldata'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Mapping = 'mapping' '(' ElementaryTypeName '=>' TypeName ')'"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Warning: Use of the \"var\" keyword is deprecated."
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// TypeError: Assignment necessary for type detection."
     }
   ],
@@ -219,7 +219,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// StorageLocation"
     }
   ],
@@ -304,7 +304,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ElementaryTypeName"
     }
   ],
@@ -6170,7 +6170,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// UserDefinedTypeName"
     }
   ],
@@ -6227,7 +6227,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Mapping"
     }
   ],
@@ -6284,7 +6284,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// ArrayTypeName"
     }
   ],
@@ -6347,19 +6347,19 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// FunctionTypeName"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// 'function' FunctionTypeParameterList ( 'internal' | 'external' | StateMutability )*"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "//                    ( 'returns' FunctionTypeParameterList )?"
     }
   ],
@@ -6522,7 +6522,7 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Destructuring Assignments"
     }
   ],

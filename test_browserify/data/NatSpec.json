@@ -1,29 +1,29 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// https://solidity.readthedocs.io/en/develop/layout-of-source-files.html#comments"
     }
   ],
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Double-Asterisk doc comments"
     }
   ],
   [],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": "/** "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@title"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": " Shape calculator. */"
     }
   ],
@@ -55,77 +55,77 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": "/** "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@dev"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": " Calculates a rectangle's surface and perimeter."
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": "      * "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@param"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": " w Width of the rectangle."
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": "      * "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@param"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": " h Height of the rectangle."
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": "      * "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@return"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": " s The calculated surface."
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": "      * "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@return"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": " p The calculated perimeter."
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.block.doc.documentation",
       "value": "      */"
     }
   ],
@@ -378,22 +378,22 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// Triple-Slash doc comments"
     }
   ],
   [],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@title"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " Shape calculator."
     }
   ],
@@ -425,15 +425,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@dev"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " Calculates a rectangle's surface and perimeter."
     }
   ],
@@ -443,15 +443,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@param"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " w Width of the rectangle."
     }
   ],
@@ -461,15 +461,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@param"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " h Height of the rectangle."
     }
   ],
@@ -479,15 +479,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@return"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " s The calculated surface."
     }
   ],
@@ -497,15 +497,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@return"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " p The calculated perimeter."
     }
   ],
@@ -758,64 +758,64 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format"
     }
   ],
   [],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@title"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " A simulator for Bugs Bunny, the most famous Rabbit"
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@author"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " Warned Bros"
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@notice"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " You can use this contract for only the most basic simulation"
     }
   ],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@dev"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " All function calls are currently implement without side effects"
     }
   ],
@@ -847,15 +847,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@author"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " Bob Clampett"
     }
   ],
@@ -865,15 +865,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@notice"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " Determine if Bugs will accept `(_food)` to eat"
     }
   ],
@@ -883,15 +883,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@dev"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " String comparison may be inefficient"
     }
   ],
@@ -901,15 +901,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@param"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " _food The name of a food to evaluate (English)"
     }
   ],
@@ -919,15 +919,15 @@
       "value": "    "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@return"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " true if Bugs will eat it, false otherwise"
     }
   ],
@@ -1098,22 +1098,22 @@
   [],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format#dynamic-expressions"
     }
   ],
   [],
   [
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@author"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " email.address@not-highlighted.com"
     }
   ],
@@ -1145,15 +1145,15 @@
       "value": "  "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// "
     },
     {
-      "type": "comment.doc.tag",
+      "type": "comment.doc.documentation.tag",
       "value": "@notice"
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": " Send `(valueInmGAV / 1000).fixed(0,3)` GAV from the account of "
     }
   ],
@@ -1163,7 +1163,7 @@
       "value": "  "
     },
     {
-      "type": "comment.doc",
+      "type": "comment.line.triple-slash.double-slash.doc.documentation",
       "value": "/// `message.caller.address()` to an account accessible only by `to.address()`"
     }
   ],

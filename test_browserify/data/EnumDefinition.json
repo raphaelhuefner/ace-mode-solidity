@@ -1,13 +1,13 @@
 [
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// EnumDefinition = 'enum' Identifier '{' EnumValue? (',' EnumValue)* '}'"
     }
   ],
   [
     {
-      "type": "comment",
+      "type": "comment.line.double-slash",
       "value": "// EnumValue = Identifier"
     }
   ],
