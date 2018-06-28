@@ -3763,7 +3763,7 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -3797,7 +3797,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -3831,7 +3831,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -3865,7 +3865,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -3899,7 +3899,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -3933,7 +3933,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -3974,7 +3974,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -4008,7 +4008,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -4042,7 +4042,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -4076,7 +4076,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {

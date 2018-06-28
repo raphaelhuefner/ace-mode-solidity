@@ -5,21 +5,22 @@ var oop = acequire("../lib/oop");
 var TextHighlightRules = acequire("./text_highlight_rules").TextHighlightRules;
 
 var SolidityHighlightRules = function(options) {
-    var intTypes = 'bytes|int|uint';
+    var intTypes = 'byte|int|uint';
     for (var width = 8; width <= 256; width += 8)
         intTypes += '|bytes' + (width / 8) + '|uint' + width + '|int' + width;
     var keywordMapper = this.createKeywordMapper({
         "variable.language":
-            "this|bool|string|byte|bytes|bytes0|address|" + intTypes,
+            "this|var|bool|address|bytes|string|" + intTypes,
         "keyword":
             "contract|library|constant|event|modifier|" +
             "struct|mapping|enum|break|continue|delete|else|for|function|" +
-            "if|new|return|returns|var|while|using|" +
+            "if|new|return|returns|while|using|" +
             "case|do|in|throw|try|typeof|" +
             "private|public|external|internal|storage|memory|payable|view|pure",
         "storage.type":
-            "constant|var|function",
-        "constant.language.boolean": "true|false"
+            "constant|function",
+        "constant.language.boolean":
+            "true|false"
     }, "identifier");
     var identifierRe = "[a-zA-Z\\$_][a-zA-Z\\d\\$_]*\\b";
 
@@ -67,6 +68,20 @@ var SolidityHighlightRules = function(options) {
                 token : "string",
                 regex : '"(?=.)',
                 next  : "qqstring"
+            }, {
+                token : "variable.language.reserved", // TODO really "reserved"? Compiler 0.4.24 says "UnimplementedFeatureError: Not yet implemented - FixedPointType."
+                regex : "u?fixed(?:" +
+                        "8x[0-8]|" + // Docs say 0-80 bits for the fractional part.
+                        "16x(?:1[0-6]|[0-9])|" + // Longest match has to be first alternative.
+                        "24x(?:2[0-4]|1[0-9]|[0-9])|" +
+                        "32x(?:3[0-2]|[1-2][0-9]|[0-9])|" +
+                        "40x(?:40|[1-3][0-9]|[0-9])|" +
+                        "48x(?:4[0-8]|[1-3][0-9]|[0-9])|" +
+                        "56x(?:5[0-6]|[1-4][0-9]|[0-9])|" +
+                        "64x(?:6[0-4]|[1-5][0-9]|[0-9])|" +
+                        "72x(?:7[0-2]|[1-6][0-9]|[0-9])|" +
+                        "(?:80|88|96|104|112|120|128|136|144|152|160|168|176|184|192|200|208|216|224|232|240|248|256)x(?:80|[1-7][0-9]|[0-9])" +
+                        ")?"
             }, {
                 token : "constant.numeric", // hex
                 regex : /0[xX][0-9a-fA-F]+\b/

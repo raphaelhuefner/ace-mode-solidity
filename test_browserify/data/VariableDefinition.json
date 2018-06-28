@@ -86,7 +86,7 @@
   ],
   [
     {
-      "type": "storage.type",
+      "type": "variable.language",
       "value": "var"
     },
     {
@@ -184,7 +184,7 @@
   ],
   [
     {
-      "type": "storage.type",
+      "type": "variable.language",
       "value": "var"
     },
     {
@@ -486,7 +486,7 @@
   ],
   [
     {
-      "type": "storage.type",
+      "type": "variable.language",
       "value": "var"
     },
     {
@@ -3924,7 +3924,7 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed"
     },
     {
@@ -3958,7 +3958,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed8x4"
     },
     {
@@ -3992,8 +3992,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed16x8"
+      "type": "variable.language.reserved",
+      "value": "fixed16x12"
     },
     {
       "type": "text",
@@ -4026,8 +4026,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed24x8"
+      "type": "variable.language.reserved",
+      "value": "fixed24x18"
     },
     {
       "type": "text",
@@ -4060,8 +4060,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed32x8"
+      "type": "variable.language.reserved",
+      "value": "fixed32x18"
     },
     {
       "type": "text",
@@ -4094,8 +4094,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed40x8"
+      "type": "variable.language.reserved",
+      "value": "fixed40x18"
     },
     {
       "type": "text",
@@ -4128,8 +4128,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed48x8"
+      "type": "variable.language.reserved",
+      "value": "fixed48x18"
     },
     {
       "type": "text",
@@ -4162,8 +4162,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed56x8"
+      "type": "variable.language.reserved",
+      "value": "fixed56x18"
     },
     {
       "type": "text",
@@ -4196,8 +4196,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed64x8"
+      "type": "variable.language.reserved",
+      "value": "fixed64x18"
     },
     {
       "type": "text",
@@ -4230,8 +4230,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed72x8"
+      "type": "variable.language.reserved",
+      "value": "fixed72x18"
     },
     {
       "type": "text",
@@ -4264,8 +4264,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "fixed80x8"
+      "type": "variable.language.reserved",
+      "value": "fixed80x80"
     },
     {
       "type": "text",
@@ -4298,7 +4298,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed88x80"
     },
     {
@@ -4332,7 +4332,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed96x80"
     },
     {
@@ -4366,7 +4366,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed104x80"
     },
     {
@@ -4400,7 +4400,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed112x80"
     },
     {
@@ -4434,7 +4434,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed120x80"
     },
     {
@@ -4468,7 +4468,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed128x80"
     },
     {
@@ -4502,7 +4502,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed136x80"
     },
     {
@@ -4536,7 +4536,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed144x80"
     },
     {
@@ -4570,7 +4570,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed152x80"
     },
     {
@@ -4604,7 +4604,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed160x80"
     },
     {
@@ -4638,7 +4638,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed168x80"
     },
     {
@@ -4672,7 +4672,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed176x80"
     },
     {
@@ -4706,7 +4706,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed184x80"
     },
     {
@@ -4740,7 +4740,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed192x80"
     },
     {
@@ -4774,7 +4774,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed200x80"
     },
     {
@@ -4808,7 +4808,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed208x80"
     },
     {
@@ -4842,7 +4842,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed216x80"
     },
     {
@@ -4876,7 +4876,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed224x80"
     },
     {
@@ -4910,7 +4910,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed232x80"
     },
     {
@@ -4944,7 +4944,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed240x80"
     },
     {
@@ -4978,7 +4978,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed248x80"
     },
     {
@@ -5012,7 +5012,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "fixed256x80"
     },
     {
@@ -5047,7 +5047,7 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed"
     },
     {
@@ -5081,7 +5081,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed8x4"
     },
     {
@@ -5115,8 +5115,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed16x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed16x12"
     },
     {
       "type": "text",
@@ -5149,8 +5149,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed24x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed24x18"
     },
     {
       "type": "text",
@@ -5183,8 +5183,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed32x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed32x18"
     },
     {
       "type": "text",
@@ -5217,8 +5217,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed40x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed40x18"
     },
     {
       "type": "text",
@@ -5251,8 +5251,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed48x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed48x18"
     },
     {
       "type": "text",
@@ -5285,8 +5285,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed56x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed56x18"
     },
     {
       "type": "text",
@@ -5319,8 +5319,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed64x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed64x18"
     },
     {
       "type": "text",
@@ -5353,8 +5353,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed72x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed72x18"
     },
     {
       "type": "text",
@@ -5387,8 +5387,8 @@
   ],
   [
     {
-      "type": "identifier",
-      "value": "ufixed80x8"
+      "type": "variable.language.reserved",
+      "value": "ufixed80x80"
     },
     {
       "type": "text",
@@ -5421,7 +5421,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed88x80"
     },
     {
@@ -5455,7 +5455,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed96x80"
     },
     {
@@ -5489,7 +5489,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed104x80"
     },
     {
@@ -5523,7 +5523,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed112x80"
     },
     {
@@ -5557,7 +5557,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed120x80"
     },
     {
@@ -5591,7 +5591,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -5625,7 +5625,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed136x80"
     },
     {
@@ -5659,7 +5659,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed144x80"
     },
     {
@@ -5693,7 +5693,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed152x80"
     },
     {
@@ -5727,7 +5727,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed160x80"
     },
     {
@@ -5761,7 +5761,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed168x80"
     },
     {
@@ -5795,7 +5795,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed176x80"
     },
     {
@@ -5829,7 +5829,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed184x80"
     },
     {
@@ -5863,7 +5863,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed192x80"
     },
     {
@@ -5897,7 +5897,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed200x80"
     },
     {
@@ -5931,7 +5931,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed208x80"
     },
     {
@@ -5965,7 +5965,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed216x80"
     },
     {
@@ -5999,7 +5999,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed224x80"
     },
     {
@@ -6033,7 +6033,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed232x80"
     },
     {
@@ -6067,7 +6067,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed240x80"
     },
     {
@@ -6101,7 +6101,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed248x80"
     },
     {
@@ -6135,7 +6135,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "variable.language.reserved",
       "value": "ufixed256x80"
     },
     {
