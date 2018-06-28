@@ -10,7 +10,9 @@ var SolidityHighlightRules = function(options) {
         intTypes += '|bytes' + (width / 8) + '|uint' + width + '|int' + width;
     var keywordMapper = this.createKeywordMapper({
         "variable.language":
-            "this|var|bool|address|bytes|string|" + intTypes,
+            "this|var|bool|address|" + intTypes,
+        "variable.language.array.dynamic":
+            "bytes|string",
         "keyword":
             "contract|library|constant|event|modifier|" +
             "struct|mapping|enum|break|continue|delete|else|for|function|" +
