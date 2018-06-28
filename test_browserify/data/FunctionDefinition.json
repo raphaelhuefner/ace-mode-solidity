@@ -6845,7 +6845,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "variable.language.array.dynamic",
       "value": "string"
     },
     {
@@ -6935,7 +6935,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "variable.language.array.dynamic",
       "value": "string"
     },
     {
@@ -7065,7 +7065,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "variable.language.array.dynamic",
       "value": "string"
     },
     {
@@ -7207,7 +7207,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "variable.language.array.dynamic",
       "value": "string"
     },
     {
@@ -7632,7 +7632,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "variable.language.array.dynamic",
       "value": "string"
     },
     {
