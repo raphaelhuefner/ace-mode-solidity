@@ -8,217 +8,217 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "abstract"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "after"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "alias"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "apply"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "auto"
     }
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.other.reserved",
       "value": "case"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "catch"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "copyof"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "default"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "define"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "final"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "immutable"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "implements"
     }
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.other.reserved",
       "value": "in"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "inline"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "let"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "macro"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "match"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "mutable"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "null"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "of"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "override"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "partial"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "promise"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "reference"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "relocatable"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "sealed"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "sizeof"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "static"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "supports"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "switch"
     }
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.other.reserved",
       "value": "try"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "type"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "typedef"
     }
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.other.reserved",
       "value": "typeof"
     }
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword.other.reserved",
       "value": "unchecked"
     }
   ]

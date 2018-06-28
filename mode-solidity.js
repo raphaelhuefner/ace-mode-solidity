@@ -17,8 +17,14 @@ var SolidityHighlightRules = function(options) {
             "contract|library|constant|event|modifier|" +
             "struct|mapping|enum|break|continue|delete|else|for|function|" +
             "if|new|return|returns|while|using|" +
-            "case|do|in|throw|try|typeof|" +
+            "do|throw|" +
             "private|public|external|internal|storage|memory|payable|view|pure",
+        "keyword.other.reserved": // see https://solidity.readthedocs.io/en/develop/miscellaneous.html#reserved-keywords
+            "abstract|after|alias|apply|auto|case|catch|copyof|default|" +
+            "define|final|immutable|implements|in|inline|let|macro|match|" +
+            "mutable|null|of|override|partial|promise|reference|relocatable|" +
+            "sealed|sizeof|static|supports|switch|try|type|typedef|typeof|" +
+            "unchecked",
         "storage.type":
             "constant|function",
         "constant.language.boolean":
