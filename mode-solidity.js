@@ -10,15 +10,13 @@ var SolidityHighlightRules = function(options) {
         intTypes += '|bytes' + (width / 8) + '|uint' + width + '|int' + width;
     var keywordMapper = this.createKeywordMapper({
         "variable.language":
-            "this|var|bool|address|" + intTypes,
-        "variable.language.array.dynamic":
-            "bytes|string",
+            "this",
         "keyword":
-            "contract|library|constant|event|modifier|" +
-            "struct|mapping|enum|break|continue|delete|else|for|function|" +
-            "if|new|return|returns|while|using|" +
-            "do|throw|" +
-            "private|public|external|internal|storage|memory|payable|view|pure",
+            "delete|import|new|returns|using",
+        "keyword.control":
+            "break|continue|do|else|for|if|return|while",
+        "keyword.control.deprecated":
+            "throw",
         "keyword.other.reserved": // see https://solidity.readthedocs.io/en/develop/miscellaneous.html#reserved-keywords
             "abstract|after|alias|apply|auto|case|catch|copyof|default|" +
             "define|final|immutable|implements|in|inline|let|macro|match|" +
@@ -26,7 +24,19 @@ var SolidityHighlightRules = function(options) {
             "sealed|sizeof|static|supports|switch|try|type|typedef|typeof|" +
             "unchecked",
         "storage.type":
-            "constant|function",
+            "contract|library|interface|function|constructor|event|modifier|" +
+            "struct|mapping|enum|" +
+            "var|bool|address|" + intTypes,
+        "storage.type.array.dynamic":
+            "bytes|string",
+        "storage.modifier.storagelocation":
+            "storage|memory|calldata",
+        "storage.modifier.statemutability":
+            "constant|payable|pure|view",
+        "storage.modifier.visibility":
+            "private|public|external|internal",
+        "storage.modifier.event":
+            "anonymous|indexed",
         "constant.language.boolean":
             "true|false"
     }, "identifier");
@@ -77,7 +87,7 @@ var SolidityHighlightRules = function(options) {
                 regex : '"(?=.)',
                 next  : "qqstring"
             }, {
-                token : "variable.language.reserved", // TODO really "reserved"? Compiler 0.4.24 says "UnimplementedFeatureError: Not yet implemented - FixedPointType."
+                token : "storage.type.reserved", // TODO really "reserved"? Compiler 0.4.24 says "UnimplementedFeatureError: Not yet implemented - FixedPointType."
                 regex : "u?fixed(?:" +
                         "8x[0-8]|" + // Docs say 0-80 bits for the fractional part.
                         "16x(?:1[0-6]|[0-9])|" + // Longest match has to be first alternative.
@@ -91,7 +101,7 @@ var SolidityHighlightRules = function(options) {
                         "(?:80|88|96|104|112|120|128|136|144|152|160|168|176|184|192|200|208|216|224|232|240|248|256)x(?:80|[1-7][0-9]|[0-9])" +
                         ")?"
             }, {
-                token : "constant.numeric", // hex
+                token : "constant.numeric.hex", // hex
                 regex : /0[xX][0-9a-fA-F]+\b/
             }, {
                 token : "constant.numeric", // float

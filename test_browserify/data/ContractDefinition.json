@@ -20,7 +20,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -53,7 +53,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -88,7 +88,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -115,7 +115,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "library"
     },
     {
@@ -144,7 +144,7 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "storage.type",
       "value": "interface"
     },
     {
@@ -173,7 +173,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -218,7 +218,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -323,7 +323,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "library"
     },
     {
@@ -416,7 +416,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -442,7 +442,7 @@
       "value": "  "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes32"
     },
     {
@@ -464,7 +464,7 @@
       "value": "  "
     },
     {
-      "type": "identifier",
+      "type": "storage.type",
       "value": "constructor"
     },
     {
@@ -472,7 +472,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes32"
     },
     {
@@ -492,7 +492,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {
@@ -571,7 +571,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -597,7 +597,7 @@
       "value": "  "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint"
     },
     {
@@ -619,7 +619,7 @@
       "value": "  "
     },
     {
-      "type": "identifier",
+      "type": "storage.type",
       "value": "constructor"
     },
     {
@@ -627,7 +627,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint"
     },
     {
@@ -647,7 +647,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {
@@ -704,7 +704,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -758,7 +758,7 @@
       "value": "  "
     },
     {
-      "type": "identifier",
+      "type": "storage.type",
       "value": "constructor"
     },
     {
@@ -766,7 +766,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint"
     },
     {
@@ -786,7 +786,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {
@@ -811,7 +811,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "contract"
     },
     {
@@ -853,7 +853,7 @@
       "value": "  "
     },
     {
-      "type": "identifier",
+      "type": "storage.type",
       "value": "constructor"
     },
     {
@@ -861,7 +861,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint"
     },
     {
@@ -917,7 +917,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {

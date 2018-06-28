@@ -20,7 +20,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "for"
     },
     {
@@ -54,7 +54,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "for"
     },
     {
@@ -66,7 +66,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -116,7 +116,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "for"
     },
     {
@@ -128,7 +128,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -206,7 +206,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "for"
     },
     {
@@ -218,7 +218,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -309,7 +309,7 @@
   [],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -343,7 +343,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "for"
     },
     {
@@ -355,7 +355,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -445,7 +445,7 @@
       "value": "  "
     },
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "if"
     },
     {
@@ -495,7 +495,7 @@
       "value": "    "
     },
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "continue"
     },
     {
@@ -549,7 +549,7 @@
       "value": "  "
     },
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "if"
     },
     {
@@ -599,7 +599,7 @@
       "value": "    "
     },
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "break"
     },
     {

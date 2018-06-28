@@ -13,7 +13,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "modifier"
     },
     {
@@ -29,7 +29,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint"
     },
     {
@@ -59,7 +59,7 @@
       "value": "    "
     },
     {
-      "type": "keyword",
+      "type": "keyword.control",
       "value": "if"
     },
     {
@@ -144,7 +144,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "modifier"
     },
     {

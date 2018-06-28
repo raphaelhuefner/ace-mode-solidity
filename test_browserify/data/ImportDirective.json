@@ -20,7 +20,7 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -38,7 +38,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -72,7 +72,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -106,7 +106,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -140,7 +140,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -190,7 +190,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -240,7 +240,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -282,7 +282,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -340,7 +340,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -394,7 +394,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -464,7 +464,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -550,7 +550,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {
@@ -648,7 +648,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "import"
     },
     {

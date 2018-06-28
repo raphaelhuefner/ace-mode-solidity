@@ -7,7 +7,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -15,7 +15,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {
@@ -49,7 +49,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -57,7 +57,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "internal"
     },
     {
@@ -91,7 +91,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -99,7 +99,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "private"
     },
     {
@@ -133,7 +133,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -141,7 +141,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {
@@ -149,7 +149,7 @@
       "value": " "
     },
     {
-      "type": "storage.type",
+      "type": "storage.modifier.statemutability",
       "value": "constant"
     },
     {
@@ -183,7 +183,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -191,7 +191,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "internal"
     },
     {
@@ -199,7 +199,7 @@
       "value": " "
     },
     {
-      "type": "storage.type",
+      "type": "storage.modifier.statemutability",
       "value": "constant"
     },
     {
@@ -233,7 +233,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -241,7 +241,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "private"
     },
     {
@@ -249,7 +249,7 @@
       "value": " "
     },
     {
-      "type": "storage.type",
+      "type": "storage.modifier.statemutability",
       "value": "constant"
     },
     {
@@ -283,7 +283,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -291,7 +291,7 @@
       "value": " "
     },
     {
-      "type": "storage.type",
+      "type": "storage.modifier.statemutability",
       "value": "constant"
     },
     {
@@ -299,7 +299,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {
@@ -333,7 +333,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -341,7 +341,7 @@
       "value": " "
     },
     {
-      "type": "storage.type",
+      "type": "storage.modifier.statemutability",
       "value": "constant"
     },
     {
@@ -349,7 +349,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "internal"
     },
     {
@@ -383,7 +383,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -391,7 +391,7 @@
       "value": " "
     },
     {
-      "type": "storage.type",
+      "type": "storage.modifier.statemutability",
       "value": "constant"
     },
     {
@@ -399,7 +399,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "private"
     },
     {
@@ -433,7 +433,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -441,7 +441,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "public"
     },
     {
@@ -459,7 +459,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -467,7 +467,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "internal"
     },
     {
@@ -485,7 +485,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -493,7 +493,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "private"
     },
     {

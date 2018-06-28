@@ -26,7 +26,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "event"
     },
     {
@@ -42,7 +42,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -54,7 +54,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -74,7 +74,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -82,7 +82,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.event",
       "value": "indexed"
     },
     {
@@ -94,7 +94,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -102,7 +102,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.event",
       "value": "indexed"
     },
     {
@@ -124,7 +124,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "event"
     },
     {
@@ -140,7 +140,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -152,7 +152,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -172,7 +172,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -180,7 +180,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.event",
       "value": "indexed"
     },
     {
@@ -192,7 +192,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -200,7 +200,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.event",
       "value": "indexed"
     },
     {
@@ -220,7 +220,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.event",
       "value": "anonymous"
     },
     {
@@ -230,7 +230,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "event"
     },
     {
@@ -246,7 +246,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -268,7 +268,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "event"
     },
     {
@@ -284,7 +284,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {

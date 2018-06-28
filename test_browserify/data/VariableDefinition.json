@@ -86,7 +86,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "var"
     },
     {
@@ -184,7 +184,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "var"
     },
     {
@@ -225,7 +225,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -233,7 +233,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.storagelocation",
       "value": "memory"
     },
     {
@@ -251,7 +251,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -259,7 +259,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.storagelocation",
       "value": "storage"
     },
     {
@@ -277,7 +277,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -285,7 +285,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.storagelocation",
       "value": "calldata"
     },
     {
@@ -310,7 +310,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "address"
     },
     {
@@ -334,7 +334,7 @@
       "value": " "
     },
     {
-      "type": "constant.numeric",
+      "type": "constant.numeric.hex",
       "value": "0x0123456789abcdef0123456789ABCDEF01234567"
     },
     {
@@ -344,7 +344,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -378,7 +378,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -452,7 +452,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -486,7 +486,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "var"
     },
     {
@@ -521,7 +521,7 @@
   [],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int"
     },
     {
@@ -555,7 +555,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int8"
     },
     {
@@ -589,7 +589,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int16"
     },
     {
@@ -623,7 +623,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int24"
     },
     {
@@ -657,7 +657,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int32"
     },
     {
@@ -691,7 +691,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int40"
     },
     {
@@ -725,7 +725,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int48"
     },
     {
@@ -759,7 +759,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int56"
     },
     {
@@ -793,7 +793,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int64"
     },
     {
@@ -827,7 +827,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int72"
     },
     {
@@ -861,7 +861,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int80"
     },
     {
@@ -895,7 +895,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int88"
     },
     {
@@ -929,7 +929,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int96"
     },
     {
@@ -963,7 +963,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int104"
     },
     {
@@ -997,7 +997,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int112"
     },
     {
@@ -1031,7 +1031,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int120"
     },
     {
@@ -1065,7 +1065,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int128"
     },
     {
@@ -1099,7 +1099,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int136"
     },
     {
@@ -1133,7 +1133,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int144"
     },
     {
@@ -1167,7 +1167,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int152"
     },
     {
@@ -1201,7 +1201,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int160"
     },
     {
@@ -1235,7 +1235,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int168"
     },
     {
@@ -1269,7 +1269,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int176"
     },
     {
@@ -1303,7 +1303,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int184"
     },
     {
@@ -1337,7 +1337,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int192"
     },
     {
@@ -1371,7 +1371,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int200"
     },
     {
@@ -1405,7 +1405,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int208"
     },
     {
@@ -1439,7 +1439,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int216"
     },
     {
@@ -1473,7 +1473,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int224"
     },
     {
@@ -1507,7 +1507,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int232"
     },
     {
@@ -1541,7 +1541,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int240"
     },
     {
@@ -1575,7 +1575,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int248"
     },
     {
@@ -1609,7 +1609,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "int256"
     },
     {
@@ -1644,7 +1644,7 @@
   [],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint"
     },
     {
@@ -1678,7 +1678,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint8"
     },
     {
@@ -1712,7 +1712,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint16"
     },
     {
@@ -1746,7 +1746,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint24"
     },
     {
@@ -1780,7 +1780,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint32"
     },
     {
@@ -1814,7 +1814,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint40"
     },
     {
@@ -1848,7 +1848,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint48"
     },
     {
@@ -1882,7 +1882,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint56"
     },
     {
@@ -1916,7 +1916,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint64"
     },
     {
@@ -1950,7 +1950,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint72"
     },
     {
@@ -1984,7 +1984,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint80"
     },
     {
@@ -2018,7 +2018,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint88"
     },
     {
@@ -2052,7 +2052,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint96"
     },
     {
@@ -2086,7 +2086,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint104"
     },
     {
@@ -2120,7 +2120,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint112"
     },
     {
@@ -2154,7 +2154,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint120"
     },
     {
@@ -2188,7 +2188,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint128"
     },
     {
@@ -2222,7 +2222,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint136"
     },
     {
@@ -2256,7 +2256,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint144"
     },
     {
@@ -2290,7 +2290,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint152"
     },
     {
@@ -2324,7 +2324,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint160"
     },
     {
@@ -2358,7 +2358,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint168"
     },
     {
@@ -2392,7 +2392,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint176"
     },
     {
@@ -2426,7 +2426,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint184"
     },
     {
@@ -2460,7 +2460,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint192"
     },
     {
@@ -2494,7 +2494,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint200"
     },
     {
@@ -2528,7 +2528,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint208"
     },
     {
@@ -2562,7 +2562,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint216"
     },
     {
@@ -2596,7 +2596,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint224"
     },
     {
@@ -2630,7 +2630,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint232"
     },
     {
@@ -2664,7 +2664,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint240"
     },
     {
@@ -2698,7 +2698,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint248"
     },
     {
@@ -2732,7 +2732,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -2767,7 +2767,7 @@
   [],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "byte"
     },
     {
@@ -2801,7 +2801,7 @@
   ],
   [
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "bytes"
     },
     {
@@ -2835,7 +2835,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes1"
     },
     {
@@ -2869,7 +2869,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes2"
     },
     {
@@ -2903,7 +2903,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes3"
     },
     {
@@ -2937,7 +2937,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes4"
     },
     {
@@ -2971,7 +2971,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes5"
     },
     {
@@ -3005,7 +3005,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes6"
     },
     {
@@ -3039,7 +3039,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes7"
     },
     {
@@ -3073,7 +3073,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes8"
     },
     {
@@ -3107,7 +3107,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes9"
     },
     {
@@ -3141,7 +3141,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes10"
     },
     {
@@ -3175,7 +3175,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes11"
     },
     {
@@ -3209,7 +3209,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes12"
     },
     {
@@ -3243,7 +3243,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes13"
     },
     {
@@ -3277,7 +3277,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes14"
     },
     {
@@ -3311,7 +3311,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes15"
     },
     {
@@ -3345,7 +3345,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes16"
     },
     {
@@ -3379,7 +3379,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes17"
     },
     {
@@ -3413,7 +3413,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes18"
     },
     {
@@ -3447,7 +3447,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes19"
     },
     {
@@ -3481,7 +3481,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes20"
     },
     {
@@ -3515,7 +3515,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes21"
     },
     {
@@ -3549,7 +3549,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes22"
     },
     {
@@ -3583,7 +3583,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes23"
     },
     {
@@ -3617,7 +3617,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes24"
     },
     {
@@ -3651,7 +3651,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes25"
     },
     {
@@ -3685,7 +3685,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes26"
     },
     {
@@ -3719,7 +3719,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes27"
     },
     {
@@ -3753,7 +3753,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes28"
     },
     {
@@ -3787,7 +3787,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes29"
     },
     {
@@ -3821,7 +3821,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes30"
     },
     {
@@ -3855,7 +3855,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes31"
     },
     {
@@ -3889,7 +3889,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bytes32"
     },
     {
@@ -3924,7 +3924,7 @@
   [],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed"
     },
     {
@@ -3958,7 +3958,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed8x4"
     },
     {
@@ -3992,7 +3992,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed16x12"
     },
     {
@@ -4026,7 +4026,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed24x18"
     },
     {
@@ -4060,7 +4060,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed32x18"
     },
     {
@@ -4094,7 +4094,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed40x18"
     },
     {
@@ -4128,7 +4128,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed48x18"
     },
     {
@@ -4162,7 +4162,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed56x18"
     },
     {
@@ -4196,7 +4196,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed64x18"
     },
     {
@@ -4230,7 +4230,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed72x18"
     },
     {
@@ -4264,7 +4264,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed80x80"
     },
     {
@@ -4298,7 +4298,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed88x80"
     },
     {
@@ -4332,7 +4332,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed96x80"
     },
     {
@@ -4366,7 +4366,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed104x80"
     },
     {
@@ -4400,7 +4400,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed112x80"
     },
     {
@@ -4434,7 +4434,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed120x80"
     },
     {
@@ -4468,7 +4468,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed128x80"
     },
     {
@@ -4502,7 +4502,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed136x80"
     },
     {
@@ -4536,7 +4536,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed144x80"
     },
     {
@@ -4570,7 +4570,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed152x80"
     },
     {
@@ -4604,7 +4604,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed160x80"
     },
     {
@@ -4638,7 +4638,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed168x80"
     },
     {
@@ -4672,7 +4672,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed176x80"
     },
     {
@@ -4706,7 +4706,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed184x80"
     },
     {
@@ -4740,7 +4740,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed192x80"
     },
     {
@@ -4774,7 +4774,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed200x80"
     },
     {
@@ -4808,7 +4808,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed208x80"
     },
     {
@@ -4842,7 +4842,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed216x80"
     },
     {
@@ -4876,7 +4876,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed224x80"
     },
     {
@@ -4910,7 +4910,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed232x80"
     },
     {
@@ -4944,7 +4944,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed240x80"
     },
     {
@@ -4978,7 +4978,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed248x80"
     },
     {
@@ -5012,7 +5012,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "fixed256x80"
     },
     {
@@ -5047,7 +5047,7 @@
   [],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed"
     },
     {
@@ -5081,7 +5081,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed8x4"
     },
     {
@@ -5115,7 +5115,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed16x12"
     },
     {
@@ -5149,7 +5149,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed24x18"
     },
     {
@@ -5183,7 +5183,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed32x18"
     },
     {
@@ -5217,7 +5217,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed40x18"
     },
     {
@@ -5251,7 +5251,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed48x18"
     },
     {
@@ -5285,7 +5285,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed56x18"
     },
     {
@@ -5319,7 +5319,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed64x18"
     },
     {
@@ -5353,7 +5353,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed72x18"
     },
     {
@@ -5387,7 +5387,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed80x80"
     },
     {
@@ -5421,7 +5421,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed88x80"
     },
     {
@@ -5455,7 +5455,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed96x80"
     },
     {
@@ -5489,7 +5489,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed104x80"
     },
     {
@@ -5523,7 +5523,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed112x80"
     },
     {
@@ -5557,7 +5557,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed120x80"
     },
     {
@@ -5591,7 +5591,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed128x80"
     },
     {
@@ -5625,7 +5625,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed136x80"
     },
     {
@@ -5659,7 +5659,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed144x80"
     },
     {
@@ -5693,7 +5693,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed152x80"
     },
     {
@@ -5727,7 +5727,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed160x80"
     },
     {
@@ -5761,7 +5761,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed168x80"
     },
     {
@@ -5795,7 +5795,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed176x80"
     },
     {
@@ -5829,7 +5829,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed184x80"
     },
     {
@@ -5863,7 +5863,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed192x80"
     },
     {
@@ -5897,7 +5897,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed200x80"
     },
     {
@@ -5931,7 +5931,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed208x80"
     },
     {
@@ -5965,7 +5965,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed216x80"
     },
     {
@@ -5999,7 +5999,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed224x80"
     },
     {
@@ -6033,7 +6033,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed232x80"
     },
     {
@@ -6067,7 +6067,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed240x80"
     },
     {
@@ -6101,7 +6101,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed248x80"
     },
     {
@@ -6135,7 +6135,7 @@
   ],
   [
     {
-      "type": "variable.language.reserved",
+      "type": "storage.type.reserved",
       "value": "ufixed256x80"
     },
     {
@@ -6233,7 +6233,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "mapping"
     },
     {
@@ -6245,7 +6245,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "address"
     },
     {
@@ -6261,7 +6261,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6290,7 +6290,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6316,7 +6316,7 @@
   ],
   [
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6377,7 +6377,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6389,7 +6389,7 @@
       "value": " "
     },
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -6401,7 +6401,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "internal"
     },
     {
@@ -6409,7 +6409,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.statemutability",
       "value": "pure"
     },
     {
@@ -6425,7 +6425,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6437,7 +6437,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -6471,7 +6471,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6483,7 +6483,7 @@
       "value": " "
     },
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -6495,7 +6495,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.visibility",
       "value": "internal"
     },
     {
@@ -6503,7 +6503,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "storage.modifier.statemutability",
       "value": "pure"
     },
     {
@@ -6532,7 +6532,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6552,7 +6552,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -6572,7 +6572,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6630,7 +6630,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "bool"
     },
     {
@@ -6650,7 +6650,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6700,7 +6700,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -6720,7 +6720,7 @@
       "value": " "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {

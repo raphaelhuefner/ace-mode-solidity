@@ -13,7 +13,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "struct"
     },
     {
@@ -39,7 +39,7 @@
       "value": "    "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "address"
     },
     {
@@ -61,7 +61,7 @@
       "value": "    "
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
@@ -86,7 +86,7 @@
   [],
   [
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "struct"
     },
     {
@@ -112,7 +112,7 @@
       "value": "    "
     },
     {
-      "type": "variable.language.array.dynamic",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
@@ -134,7 +134,7 @@
       "value": "    "
     },
     {
-      "type": "keyword",
+      "type": "storage.type",
       "value": "mapping"
     },
     {
@@ -146,7 +146,7 @@
       "value": "("
     },
     {
-      "type": "variable.language",
+      "type": "storage.type",
       "value": "address"
     },
     {
