@@ -6,7 +6,7 @@ const collectSoliditySnippets = require('./collect-solidity-snippets.js');
 
 async function writeSoliditySnippets() {
   let soliditySnippets = await collectSoliditySnippets();
-  await writeFilePromise(__dirname + '/solidity-snippets.js', soliditySnippets);
+  await writeFilePromise(__dirname + '/cache/solidity-snippets.js', soliditySnippets);
 }
 
 async function build() {
@@ -19,12 +19,12 @@ async function build() {
   }
 
   browserify(browserify_opts)
-    .require(require.resolve('./solidity-snippets.js'), { basedir: __dirname })
+    .require(require.resolve('./cache/solidity-snippets.js'), { basedir: __dirname })
     .require(require.resolve('../mode-solidity.js'), { basedir: __dirname })
     .require(require.resolve('./src/solidity-editor.js'), { entry: true, basedir: __dirname })
 
     .bundle()
-    .pipe(fs.createWriteStream(__dirname + '/public/bundle.js'));
+    .pipe(fs.createWriteStream(__dirname + '/cache/bundle.js'));
 }
 
 build();

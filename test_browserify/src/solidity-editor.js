@@ -1,6 +1,6 @@
 var ace = require('brace');
 require('../../mode-solidity.js');
-var soliditySnippets = require('../solidity-snippets.js');
+var soliditySnippets = require('../cache/solidity-snippets.js');
 var tokenization = {};
 
 var editor = ace.edit('editor');
