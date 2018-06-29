@@ -107,6 +107,9 @@ var SolidityHighlightRules = function(options) {
                         "(?:80|88|96|104|112|120|128|136|144|152|160|168|176|184|192|200|208|216|224|232|240|248|256)x(?:80|[1-7][0-9]|[0-9])" +
                         ")?"
             }, {
+                token : "keyword.control", // PlaceholderStatement in ModifierDefinition
+                regex : /\b_\b/
+            }, {
                 token : "constant.numeric.hex", // hex
                 regex : /0[xX][0-9a-fA-F]+\b/
             }, {

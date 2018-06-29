@@ -4900,7 +4900,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword.control",
       "value": "_"
     },
     {
@@ -4922,6 +4922,14 @@
     {
       "type": "punctuation.operator",
       "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// Should be a legal identifier outside of modifiers, but keyword syntax highlighting will still trigger."
     }
   ],
   [

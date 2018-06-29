@@ -117,7 +117,7 @@
       "value": "        "
     },
     {
-      "type": "identifier",
+      "type": "keyword.control",
       "value": "_"
     },
     {
@@ -170,7 +170,7 @@
       "value": "    "
     },
     {
-      "type": "identifier",
+      "type": "keyword.control",
       "value": "_"
     },
     {
