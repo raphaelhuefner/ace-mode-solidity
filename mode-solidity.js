@@ -12,7 +12,7 @@ var SolidityHighlightRules = function(options) {
         "variable.language":
             "this",
         "keyword":
-            "delete|import|new|returns|using",
+            "as|delete|emit|from|import|new|returns|using",
         "keyword.control":
             "break|continue|do|else|for|if|return|while",
         "keyword.control.deprecated":
@@ -38,7 +38,13 @@ var SolidityHighlightRules = function(options) {
         "storage.modifier.event":
             "anonymous|indexed",
         "constant.language.boolean":
-            "true|false"
+            "true|false",
+        "constant.numeric.other.unit.currency":
+            "wei|szabo|finney|ether",
+        "constant.numeric.other.unit.time":
+            "seconds|minutes|hours|days|weeks",
+        "constant.numeric.other.unit.time.deprecated":
+            "years"
     }, "identifier");
     var identifierRe = "[a-zA-Z\\$_][a-zA-Z\\d\\$_]*\\b";
 

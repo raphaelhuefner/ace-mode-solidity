@@ -3374,7 +3374,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.currency",
       "value": "wei"
     },
     {
@@ -3416,7 +3416,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.currency",
       "value": "szabo"
     },
     {
@@ -3458,7 +3458,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.currency",
       "value": "finney"
     },
     {
@@ -3500,7 +3500,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.currency",
       "value": "ether"
     },
     {
@@ -3542,7 +3542,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.time",
       "value": "seconds"
     },
     {
@@ -3584,7 +3584,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.time",
       "value": "minutes"
     },
     {
@@ -3626,7 +3626,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.time",
       "value": "hours"
     },
     {
@@ -3668,7 +3668,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.time",
       "value": "days"
     },
     {
@@ -3710,7 +3710,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.time",
       "value": "weeks"
     },
     {
@@ -3752,7 +3752,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "constant.numeric.other.unit.time.deprecated",
       "value": "years"
     },
     {

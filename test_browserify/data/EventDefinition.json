@@ -299,7 +299,7 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "emit"
     },
     {

@@ -54,7 +54,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -88,7 +88,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -122,7 +122,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -156,7 +156,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -172,7 +172,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -206,7 +206,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -222,7 +222,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -264,7 +264,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -302,7 +302,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -322,7 +322,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -376,7 +376,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -414,77 +414,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
-      "value": "as"
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "identifier",
-      "value": "something"
-    },
-    {
-      "type": "punctuation.operator",
-      "value": ","
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "identifier",
-      "value": "more"
-    },
-    {
-      "type": "paren.rparen",
-      "value": "}"
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "identifier",
-      "value": "from"
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "string",
-      "value": "\"./other.sol\""
-    },
-    {
-      "type": "punctuation.operator",
-      "value": ";"
-    }
-  ],
-  [
-    {
       "type": "keyword",
-      "value": "import"
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "paren.lparen",
-      "value": "{"
-    },
-    {
-      "type": "identifier",
-      "value": "other"
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "identifier",
       "value": "as"
     },
     {
@@ -508,11 +438,81 @@
       "value": "more"
     },
     {
+      "type": "paren.rparen",
+      "value": "}"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "from"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string",
+      "value": "\"./other.sol\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "keyword",
+      "value": "import"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    },
+    {
+      "type": "identifier",
+      "value": "other"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
+      "value": "as"
+    },
+    {
       "type": "text",
       "value": " "
     },
     {
       "type": "identifier",
+      "value": "something"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "more"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -532,7 +532,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -570,7 +570,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -610,7 +610,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -630,7 +630,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
@@ -668,7 +668,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -696,7 +696,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -724,7 +724,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "as"
     },
     {
@@ -744,7 +744,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "from"
     },
     {
