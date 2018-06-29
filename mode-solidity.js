@@ -85,11 +85,11 @@ var SolidityHighlightRules = function(options) {
                 token : "text",
                 regex : "\\s+|^$"
             }, {
-                token : "string",
+                token : "string.quoted.single",
                 regex : "'(?=.)",
                 next  : "qstring"
             }, {
-                token : "string",
+                token : "string.quoted.double",
                 regex : '"(?=.)',
                 next  : "qqstring"
             }, {
@@ -109,6 +109,12 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : "keyword.control", // PlaceholderStatement in ModifierDefinition
                 regex : /\b_\b/
+            }, {
+                token : [ // HexLiteral
+                    "string.other.hex", "string.other.hex", "string.other.hex",
+                    "string.other.hex", "string.other.hex"
+                ],
+                regex : /(\b)(hex)(['"])((?:[0-9a-fA-F]{2})*)(\3)/
             }, {
                 token : "constant.numeric.hex", // hex
                 regex : /0[xX][0-9a-fA-F]+\b/
@@ -208,15 +214,15 @@ var SolidityHighlightRules = function(options) {
                 token : "constant.language.escape",
                 regex : escapedRe
             }, {
-                token : "string",
+                token : "string.quoted.double",
                 regex : "\\\\$",
                 next  : "qqstring"
             }, {
-                token : "string",
+                token : "string.quoted.double",
                 regex : '"|$',
                 next  : "start"
             }, {
-                defaultToken: "string"
+                defaultToken: "string.quoted.double"
             }
         ],
         "qstring" : [
@@ -224,15 +230,15 @@ var SolidityHighlightRules = function(options) {
                 token : "constant.language.escape",
                 regex : escapedRe
             }, {
-                token : "string",
+                token : "string.quoted.single",
                 regex : "\\\\$",
                 next  : "qstring"
             }, {
-                token : "string",
+                token : "string.quoted.single",
                 regex : "'|$",
                 next  : "start"
             }, {
-                defaultToken: "string"
+                defaultToken: "string.quoted.single"
             }
         ]
     };

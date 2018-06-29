@@ -685,7 +685,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"red\""
     },
     {
@@ -2660,7 +2660,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"yes\""
     },
     {
@@ -2676,7 +2676,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"no\""
     },
     {
@@ -4149,12 +4149,16 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "string.other.hex",
       "value": "hex"
     },
     {
-      "type": "string",
-      "value": "\"\""
+      "type": "string.other.hex",
+      "value": "\""
+    },
+    {
+      "type": "string.other.hex",
+      "value": "\""
     },
     {
       "type": "punctuation.operator",
@@ -4195,12 +4199,20 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "string.other.hex",
       "value": "hex"
     },
     {
-      "type": "string",
-      "value": "\"0123456789abcdef0123456789ABCDEF\""
+      "type": "string.other.hex",
+      "value": "\""
+    },
+    {
+      "type": "string.other.hex",
+      "value": "0123456789abcdef0123456789ABCDEF"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "\""
     },
     {
       "type": "punctuation.operator",
@@ -4241,12 +4253,16 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "string.other.hex",
       "value": "hex"
     },
     {
-      "type": "string",
-      "value": "''"
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
     },
     {
       "type": "punctuation.operator",
@@ -4287,12 +4303,20 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "string.other.hex",
       "value": "hex"
     },
     {
-      "type": "string",
-      "value": "'0123456789abcdef0123456789ABCDEF'"
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "0123456789abcdef0123456789ABCDEF"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
     },
     {
       "type": "punctuation.operator",
@@ -4332,7 +4356,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"\""
     },
     {
@@ -4366,7 +4390,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"Hello!\""
     },
     {
@@ -4400,7 +4424,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"Hello "
     },
     {
@@ -4408,7 +4432,7 @@
       "value": "\\x26\\x03"
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "!\""
     },
     {
@@ -4442,7 +4466,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"Hello "
     },
     {
@@ -4450,7 +4474,7 @@
       "value": "\\u2603"
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "!\""
     },
     {
@@ -4484,7 +4508,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"I said "
     },
     {
@@ -4492,7 +4516,7 @@
       "value": "\\\""
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "Hello!"
     },
     {
@@ -4500,7 +4524,7 @@
       "value": "\\\""
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": ", did you hear it?\""
     },
     {
@@ -4534,19 +4558,19 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"Look ma, \\"
     }
   ],
   [
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "multi-line strings! Just escape \\"
     }
   ],
   [
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "the newline with a back-slash.\""
     },
     {
@@ -4599,7 +4623,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "''"
     },
     {
@@ -4633,7 +4657,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "'Hello World!'"
     },
     {
@@ -4667,7 +4691,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "'Hello "
     },
     {
@@ -4675,7 +4699,7 @@
       "value": "\\x26\\x03"
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "!'"
     },
     {
@@ -4709,7 +4733,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "'Hello "
     },
     {
@@ -4717,7 +4741,7 @@
       "value": "\\u2603"
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "!'"
     },
     {
@@ -4751,7 +4775,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "'Hello "
     },
     {
@@ -4759,7 +4783,7 @@
       "value": "\\'"
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "World"
     },
     {
@@ -4767,7 +4791,7 @@
       "value": "\\'"
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "!'"
     },
     {
@@ -4801,13 +4825,13 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "'Hello \\"
     }
   ],
   [
     {
-      "type": "string",
+      "type": "string.quoted.single",
       "value": "World!'"
     },
     {

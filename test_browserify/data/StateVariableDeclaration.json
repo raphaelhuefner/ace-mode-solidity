@@ -39,7 +39,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"publicExample\""
     },
     {
@@ -81,7 +81,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"internalExample\""
     },
     {
@@ -123,7 +123,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"privateExample\""
     },
     {
@@ -173,7 +173,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"publicConstantExample\""
     },
     {
@@ -223,7 +223,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"internalConstantExample\""
     },
     {
@@ -273,7 +273,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"privateConstantExample\""
     },
     {
@@ -323,7 +323,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"constantPublicExample\""
     },
     {
@@ -373,7 +373,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"constantInternalExample\""
     },
     {
@@ -423,7 +423,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"constantPrivateExample\""
     },
     {

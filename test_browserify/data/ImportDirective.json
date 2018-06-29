@@ -28,7 +28,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -46,7 +46,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -96,7 +96,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -130,7 +130,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -180,7 +180,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -230,7 +230,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -272,7 +272,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -330,7 +330,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -384,7 +384,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -454,7 +454,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -540,7 +540,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -638,7 +638,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {
@@ -752,7 +752,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"./other.sol\""
     },
     {

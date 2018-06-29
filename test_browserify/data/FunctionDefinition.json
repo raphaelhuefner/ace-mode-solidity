@@ -7690,7 +7690,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "string.quoted.double",
       "value": "\"Hello World!\""
     },
     {
