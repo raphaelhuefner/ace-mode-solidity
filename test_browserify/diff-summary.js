@@ -2,6 +2,7 @@ const gatherTokenizations = require('./gather-tokenizations.js');
 const readFilePromise = require('fs-readfile-promise');
 const writeFilePromise = require('fs-writefile-promise');
 const chalk = require('chalk');
+const hasFlag = require('has-flag');
 
 const DATADIR = __dirname + '/data';
 const CACHEDIR = __dirname + '/cache';
@@ -170,7 +171,9 @@ async function runStats() {
 }
 
 async function run() {
-  await writeCache();
+  if (! hasFlag('skip-cache-write')) {
+    await writeCache();
+  }
   await runStats();
 }
 

@@ -7,6 +7,7 @@
     "test-build": "node ./test_browserify/build.js",
     "test-overwrite": "npm run test-build && node ./test_browserify/overwrite-expected-tokenizations.js",
     "test-diff-summary": "npm run test-build && node ./test_browserify/diff-summary.js",
+    "test-diff-summary-quick": "node ./test_browserify/diff-summary.js --skip-cache-write",
     "test": "npm run test-build && node ./test_browserify/run.js"
   },
   "repository": {
@@ -41,6 +42,7 @@
     "express": "^4.16.3",
     "fs-readfile-promise": "^3.0.1",
     "fs-writefile-promise": "^3.0.0",
+    "has-flag": "^3.0.0",
     "puppeteer": "^1.5.0",
     "tape": "^4.9.1"
   }
