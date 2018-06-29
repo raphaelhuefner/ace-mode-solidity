@@ -1245,5 +1245,98 @@
       "value": "}"
     }
   ],
+  [],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// The following simple comments should not have NatSpec highlighting:"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// @title A simulator for Bugs Bunny, the most famous Rabbit"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// @author Warned Bros"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// @notice You can use this contract for only the most basic simulation"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// @dev All function calls are currently implement without side effects"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// @param _food The name of a food to evaluate (English)"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// @return true if Bugs will eat it, false otherwise"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment.block",
+      "value": "/*"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * @title A simulator for Bugs Bunny, the most famous Rabbit"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * @author Warned Bros"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * @notice You can use this contract for only the most basic simulation"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * @dev All function calls are currently implement without side effects"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * @param _food The name of a food to evaluate (English)"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * @return true if Bugs will eat it, false otherwise"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " */"
+    }
+  ],
   []
 ]

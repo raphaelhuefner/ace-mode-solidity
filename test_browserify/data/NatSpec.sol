@@ -57,3 +57,21 @@ contract ShowcaseDynamicComments {
   function send(address to, uint256 valueInmGAV) {
   }
 }
+
+// The following simple comments should not have NatSpec highlighting:
+
+// @title A simulator for Bugs Bunny, the most famous Rabbit
+// @author Warned Bros
+// @notice You can use this contract for only the most basic simulation
+// @dev All function calls are currently implement without side effects
+// @param _food The name of a food to evaluate (English)
+// @return true if Bugs will eat it, false otherwise
+
+/*
+ * @title A simulator for Bugs Bunny, the most famous Rabbit
+ * @author Warned Bros
+ * @notice You can use this contract for only the most basic simulation
+ * @dev All function calls are currently implement without side effects
+ * @param _food The name of a food to evaluate (English)
+ * @return true if Bugs will eat it, false otherwise
+ */
