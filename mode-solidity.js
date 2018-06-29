@@ -12,7 +12,7 @@ var SolidityHighlightRules = function(options) {
         "variable.language":
             "this",
         "keyword":
-            "as|delete|emit|from|import|new|returns|using",
+            "as|delete|emit|from|import|new|returns",
         "keyword.control":
             "break|continue|do|else|for|if|return|while",
         "keyword.control.deprecated":
