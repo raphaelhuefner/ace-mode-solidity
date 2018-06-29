@@ -116,6 +116,9 @@ var SolidityHighlightRules = function(options) {
                 token : "constant.numeric", // float
                 regex : /[+-]?\d+(?:(?:\.\d*)?(?:[eE][+-]?\d+)?)?\b/
             }, {
+                token : ["keyword", "text", "keyword", "text", "constant.other"],
+                regex : "(pragma)(\\s+)(solidity|experimental)(\\s+)([^;]+)"
+            }, {
                 token : [
                     "storage.type", "text", "entity.name.function", "text", "paren.lparen"
                 ],

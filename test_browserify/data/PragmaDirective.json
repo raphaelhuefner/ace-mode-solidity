@@ -14,7 +14,7 @@
   [],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "pragma"
     },
     {
@@ -22,7 +22,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "solidity"
     },
     {
@@ -30,20 +30,8 @@
       "value": " "
     },
     {
-      "type": "keyword.operator",
-      "value": "^"
-    },
-    {
-      "type": "constant.numeric",
-      "value": "0.4"
-    },
-    {
-      "type": "punctuation.operator",
-      "value": "."
-    },
-    {
-      "type": "constant.numeric",
-      "value": "24"
+      "type": "constant.other",
+      "value": "^0.4.24"
     },
     {
       "type": "punctuation.operator",
@@ -52,7 +40,7 @@
   ],
   [
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "pragma"
     },
     {
@@ -60,7 +48,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "keyword",
       "value": "experimental"
     },
     {
@@ -68,7 +56,7 @@
       "value": " "
     },
     {
-      "type": "string",
+      "type": "constant.other",
       "value": "\"v0.5.0\""
     },
     {
