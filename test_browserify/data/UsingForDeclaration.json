@@ -23,7 +23,7 @@
       "value": " "
     },
     {
-      "type": "keyword.control",
+      "type": "keyword",
       "value": "for"
     },
     {
@@ -57,7 +57,7 @@
       "value": " "
     },
     {
-      "type": "keyword.control",
+      "type": "keyword",
       "value": "for"
     },
     {
@@ -65,7 +65,7 @@
       "value": " "
     },
     {
-      "type": "keyword.operator",
+      "type": "identifier",
       "value": "*"
     },
     {

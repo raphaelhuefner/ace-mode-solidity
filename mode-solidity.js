@@ -46,6 +46,7 @@ var SolidityHighlightRules = function(options) {
         "constant.numeric.other.unit.time.deprecated":
             "years"
     }, "identifier");
+
     var identifierRe = "[a-zA-Z\\$_][a-zA-Z\\d\\$_]*\\b";
 
     var escapedRe = "\\\\(?:x[0-9a-fA-F]{2}|" + // hex
@@ -124,6 +125,9 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : ["keyword", "text", "keyword", "text", "constant.other"],
                 regex : "(pragma)(\\s+)(solidity|experimental)(\\s+)([^;]+)"
+            }, {
+                token : ["keyword", "text", "identifier", "text", "keyword", "text", "identifier"], // UsingForDeclaration
+                regex : "(using)(\\s+)(" + identifierRe + ")(\\s+)(for)(\\s+)(" + identifierRe + "|\\*)"
             }, {
                 token : [
                     "storage.type", "text", "entity.name.function", "text", "paren.lparen"
