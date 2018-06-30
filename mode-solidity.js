@@ -12,11 +12,13 @@ var SolidityHighlightRules = function(options) {
         "variable.language":
             "this",
         "keyword":
-            "as|delete|emit|from|import|new|returns",
+            "as|emit|from|import|returns",
         "keyword.control":
             "break|continue|do|else|for|if|return|while",
         "keyword.control.deprecated":
             "throw",
+        "keyword.operator":
+            "delete|new",
         "keyword.other.reserved": // see https://solidity.readthedocs.io/en/develop/miscellaneous.html#reserved-keywords
             "abstract|after|alias|apply|auto|case|catch|copyof|default|" +
             "define|final|immutable|implements|in|inline|let|macro|match|" +
@@ -139,7 +141,7 @@ var SolidityHighlightRules = function(options) {
                 regex : identifierRe
             }, {
                 token : "keyword.operator",
-                regex : /--|\*\*|\+\+|==|=|!=|=>|<=|>=|<<=|>>=|<|>|!|&&|\|\||[!%&*+\-~\/^]=?/
+                regex : /--|\*\*|\+\+|=>|<<|>>|<<=|>>=|&&|\|\||[!&|+\-*\/%~^<>=]=?/
             }, {
                 token : "punctuation.operator",
                 regex : /[?:,;.]/

@@ -473,7 +473,7 @@
       "value": " "
     },
     {
-      "type": "keyword",
+      "type": "keyword.operator",
       "value": "new"
     },
     {
@@ -1424,7 +1424,7 @@
   ],
   [
     {
-      "type": "keyword",
+      "type": "keyword.operator",
       "value": "delete"
     },
     {
@@ -2156,7 +2156,15 @@
     },
     {
       "type": "text",
-      "value": " | "
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "|"
+    },
+    {
+      "type": "text",
+      "value": " "
     },
     {
       "type": "identifier",
@@ -2830,11 +2838,11 @@
     },
     {
       "type": "text",
-      "value": " |"
+      "value": " "
     },
     {
       "type": "keyword.operator",
-      "value": "="
+      "value": "|="
     },
     {
       "type": "text",
