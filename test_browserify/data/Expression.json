@@ -4924,6 +4924,24 @@
   ],
   [
     {
+      "type": "comment.line.double-slash",
+      "value": "// \"_\" is be a legal identifier outside of modifiers. Keyword syntax"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// highlighting triggers nevertheless, to alert user of special meaning and"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// potential confusion."
+    }
+  ],
+  [
+    {
       "type": "storage.type",
       "value": "uint"
     },
@@ -4954,14 +4972,6 @@
     {
       "type": "punctuation.operator",
       "value": ";"
-    },
-    {
-      "type": "text",
-      "value": " "
-    },
-    {
-      "type": "comment.line.double-slash",
-      "value": "// Should be a legal identifier outside of modifiers, but keyword syntax highlighting will still trigger."
     }
   ],
   [

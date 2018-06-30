@@ -242,7 +242,10 @@ World!';
 // Identifier = [a-zA-Z_$] [a-zA-Z_$0-9]*
 uint a = 0;
 uint A = 0;
-uint _ = 0; // Should be a legal identifier outside of modifiers, but keyword syntax highlighting will still trigger.
+// "_" is be a legal identifier outside of modifiers. Keyword syntax
+// highlighting triggers nevertheless, to alert user of special meaning and
+// potential confusion.
+uint _ = 0;
 uint $ = 0;
 uint a0b_$1c = 0;
 uint A0b_$1c = 0;
