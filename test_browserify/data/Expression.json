@@ -4966,7 +4966,7 @@
       "value": " "
     },
     {
-      "type": "keyword.operator",
+      "type": "identifier",
       "value": "$"
     },
     {

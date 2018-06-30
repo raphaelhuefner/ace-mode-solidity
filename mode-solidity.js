@@ -47,7 +47,7 @@ var SolidityHighlightRules = function(options) {
             "years"
     }, "identifier");
 
-    var identifierRe = "[a-zA-Z\\$_][a-zA-Z\\d\\$_]*\\b";
+    var identifierRe = "[a-zA-Z_$][a-zA-Z_$0-9]*\\b|\\$"; // Single "$" can't have a word boundary since it's not a word char.
 
     var escapedRe = "\\\\(?:x[0-9a-fA-F]{2}|" + // hex
         "u[0-9a-fA-F]{4}|" + // unicode
@@ -139,7 +139,7 @@ var SolidityHighlightRules = function(options) {
                 regex : identifierRe
             }, {
                 token : "keyword.operator",
-                regex : /--|\*\*|\+\+|==|=|!=|=>|<=|>=|<<=|>>=|<|>|!|&&|\|\||[!$%&*+\-~\/^]=?/
+                regex : /--|\*\*|\+\+|==|=|!=|=>|<=|>=|<<=|>>=|<|>|!|&&|\|\||[!%&*+\-~\/^]=?/
             }, {
                 token : "punctuation.operator",
                 regex : /[?:,;.]/
