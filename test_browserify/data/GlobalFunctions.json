@@ -1,0 +1,1920 @@
+[
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// https://solidity.readthedocs.io/en/develop/units-and-global-variables.html"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// https://solidity.readthedocs.io/en/develop/miscellaneous.html#global-variables"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "storage.type",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "GlobalFunctions"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "storage.type",
+      "value": "function"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "entity.name.function",
+      "value": "h"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint256"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "param"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.statemutability",
+      "value": "payable"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.visibility",
+      "value": "external"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type.array.dynamic",
+      "value": "bytes"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.storagelocation",
+      "value": "memory"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "encoded1"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "abi.encode"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"Hello\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"World!\""
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// ABI-encodes the given arguments"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type.array.dynamic",
+      "value": "bytes"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.storagelocation",
+      "value": "memory"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "encoded2"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "abi.encodePacked"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"Hello\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"World!\""
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// Performes packed encoding of the given arguments"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type.array.dynamic",
+      "value": "bytes"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.storagelocation",
+      "value": "memory"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "encoded3"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "abi.encodeWithSelector"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric.hex",
+      "value": "0x12345678"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"Hello\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"World!\""
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// ABI-encodes the given arguments starting from the second and prepends the given four-byte selector"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type.array.dynamic",
+      "value": "bytes"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.storagelocation",
+      "value": "memory"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "encoded4"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "abi.encodeWithSignature"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"m(string,string)\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"Hello\""
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"World!\""
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// Equivalent to abi.encodeWithSelector(bytes4(keccak256(bytes(signature)), ...)"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b1hash"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function.deprecated",
+      "value": "block.blockhash"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "12"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// hash of the given block - only works for 256 most recent, excluding current, blocks - deprecated in version 0.4.22 and replaced by blockhash(uint blockNumber)."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "runway"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "gasleft"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// remaining gas"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "support.function",
+      "value": "assert"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "param"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "10"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// abort execution and revert state changes if condition is false (use for internal error)"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "support.function",
+      "value": "require"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "param"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "10"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// abort execution and revert state changes if condition is false (use for malformed input or error in external component)"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "support.function",
+      "value": "require"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "param"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "<"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "10"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"Value of `i` is too big!\""
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// abort execution and revert state changes if condition is false (use for malformed input or error in external component). Also provide error message."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "support.function",
+      "value": "revert"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// abort execution and revert state changes"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "support.function",
+      "value": "revert"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.quoted.double",
+      "value": "\"Better not!\""
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// abort execution and revert state changes providing an explanatory string"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b2hash"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "blockhash"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "12"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// hash of the given block - only works for 256 most recent blocks"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "khash"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "keccak256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "0123456789"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// compute the Ethereum-SHA-3 (Keccak-256) hash of the input"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "s3hash"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function.deprecated",
+      "value": "sha3"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "0123456789"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// a deprecated alias to keccak256"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "s256hash"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "sha256"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "0123456789"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// compute the SHA-256 hash of the input"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bytes20"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "rhash"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "ripemd160"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "0123456789"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// compute the RIPEMD-160 hash of the input"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "storage.type",
+      "value": "function"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "entity.name.function",
+      "value": "i"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint256"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "param"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.statemutability",
+      "value": "payable"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.visibility",
+      "value": "external"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// All I learned about `ecrecover()` is that people have difficulties to learn about `ecrecover()`."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// Fortunately, I don't need to understand it yet, only to make it's syntax highlighting work:"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bytes32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b32"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "address"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "ecrecover"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "b32"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric.hex",
+      "value": "0xff"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b32"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "b32"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// recover address associated with the public key from elliptic curve signature, return zero on error"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "sum"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "addmod"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// compute (x + y) % k where the addition is performed with arbitrary precision and does not wrap around at 2**256. Assert that k != 0 starting from version 0.5.0."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "prod"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.function",
+      "value": "mulmod"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "2"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ","
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "constant.numeric",
+      "value": "3"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// compute (x * y) % k where the multiplication is performed with arbitrary precision and does not wrap around at 2**256. Assert that k != 0 starting from version 0.5.0."
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "support.function",
+      "value": "selfdestruct"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// destroy the current contract, sending its funds to the given address"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "support.function.deprecated",
+      "value": "suicide"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// a deprecated alias to selfdestruct"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "success1"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "support.function",
+      "value": ".call"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "01234567"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// issue low-level CALL with the given payload, returns false on failure, forwards all available gas, adjustable"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "success2"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "support.function.deprecated",
+      "value": ".callcode"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "01234567"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// issue low-level CALLCODE with the given payload, returns false on failure, forwards all available gas, adjustable"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "success3"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "support.function",
+      "value": ".delegatecall"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "string.other.hex",
+      "value": "hex"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "01234567"
+    },
+    {
+      "type": "string.other.hex",
+      "value": "'"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// issue low-level DELEGATECALL with the given payload, returns false on failure, forwards all available gas, adjustable"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "bool"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "success4"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "support.function",
+      "value": ".send"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1337"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// send given amount of Wei to Address, returns false on failure"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "support.function",
+      "value": ".transfer"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "1337"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// send given amount of Wei to Address, throws on failure"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  []
+]

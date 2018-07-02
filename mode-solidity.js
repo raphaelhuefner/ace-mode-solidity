@@ -10,7 +10,7 @@ var SolidityHighlightRules = function(options) {
         intTypes += '|bytes' + (width / 8) + '|uint' + width + '|int' + width;
     var keywordMapper = this.createKeywordMapper({
         "variable.language":
-            "this",
+            "this|super",
         "keyword":
             "as|emit|from|import|returns",
         "keyword.control":
@@ -39,6 +39,13 @@ var SolidityHighlightRules = function(options) {
             "private|public|external|internal",
         "storage.modifier.event":
             "anonymous|indexed",
+        "support.function":
+            "addmod|assert|blockhash|ecrecover|gasleft|keccak256|mulmod|" +
+            "require|revert|ripemd160|selfdestruct|sha256",
+        "support.function.deprecated":
+            "sha3|suicide",
+        "support.variable":
+            "now",
         "constant.language.boolean":
             "true|false",
         "constant.numeric.other.unit.currency":
@@ -130,6 +137,18 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : ["keyword", "text", "identifier", "text", "keyword", "text", "identifier"], // UsingForDeclaration
                 regex : "(using)(\\s+)(" + identifierRe + ")(\\s+)(for)(\\s+)(" + identifierRe + "|\\*)"
+            }, {
+                token : "support.function.deprecated", // Not in keywordMapper because of ".". Longest match has to be first alternative.
+                regex : /block\s*\.\s*blockhash|\.\s*callcode/
+            }, {
+                token : "support.function", // Not in keywordMapper because of ".". Longest match has to be first alternative.
+                regex : /abi\s*\.\s*(?:encodeWithSignature|encodeWithSelector|encodePacked|encode)|\.\s*(?:delegatecall|transfer|call|send)/
+            }, {
+                token : "support.variable", // Not in keywordMapper because of ".". Longest match has to be first alternative.
+                regex : /block\s*\.\s*(?:difficulty|timestamp|coinbase|gaslimit|number)|msg\s*\.\s*(?:sender|value|data)|tx\s*\.\s*(?:gasprice|origin)|\.\s*balance/
+            }, {
+                token : "support.variable.deprecated", // Not in keywordMapper because of ".". Longest match has to be first alternative.
+                regex : /msg\s*\.\s*gas/
             }, {
                 token : [
                     "storage.type", "text", "entity.name.function", "text", "paren.lparen"

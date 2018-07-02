@@ -1031,7 +1031,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "support.function",
       "value": "keccak256"
     },
     {
@@ -1059,7 +1059,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "support.function",
       "value": "keccak256"
     },
     {

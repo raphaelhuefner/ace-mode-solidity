@@ -1,0 +1,810 @@
+[
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// https://solidity.readthedocs.io/en/develop/units-and-global-variables.html"
+    }
+  ],
+  [
+    {
+      "type": "comment.line.double-slash",
+      "value": "// https://solidity.readthedocs.io/en/develop/miscellaneous.html#global-variables"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "storage.type",
+      "value": "contract"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "GlobalVariables"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "storage.type",
+      "value": "function"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "entity.name.function",
+      "value": "j"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "variable.parameter",
+      "value": "uint256"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": " "
+    },
+    {
+      "type": "variable.parameter",
+      "value": "param"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.statemutability",
+      "value": "payable"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.visibility",
+      "value": "external"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "paren.lparen",
+      "value": "{"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "address"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "block.coinbase"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// current block miner’s address"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "hardship"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "block.difficulty"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// current block difficulty"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "tankVolume"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "block.gaslimit"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// current block gaslimit"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "houseNumber"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "block.number"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// current block number"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "nowish"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "block.timestamp"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// current block timestamp"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type.array.dynamic",
+      "value": "bytes"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.modifier.storagelocation",
+      "value": "memory"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "whatToDo"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "msg.data"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// complete calldata"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "runway"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable.deprecated",
+      "value": "msg.gas"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// remaining gas - deprecated in version 0.4.21 and to be replaced by gasleft()"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "address"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "boss"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "msg.sender"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// sender of the message (current call)"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "worth"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "msg.value"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// number of wei sent with the message"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "betterThanNever"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "now"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// current block timestamp (alias for block.timestamp)"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "fuel"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "tx.gasprice"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// gas price of the transaction"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "address"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "bigWig"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "support.variable",
+      "value": "tx.origin"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// sender of the transaction (full call chain)"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "variable.language",
+      "value": "this"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "j"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "17"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// the current contract, explicitly convertible to address"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "variable.language",
+      "value": "super"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": "."
+    },
+    {
+      "type": "identifier",
+      "value": "j"
+    },
+    {
+      "type": "paren.lparen",
+      "value": "("
+    },
+    {
+      "type": "constant.numeric",
+      "value": "17"
+    },
+    {
+      "type": "paren.rparen",
+      "value": ")"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// the contract one level higher in the inheritance hierarchy"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "    "
+    },
+    {
+      "type": "storage.type",
+      "value": "uint256"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addyPurse"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "keyword.operator",
+      "value": "="
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "identifier",
+      "value": "addy"
+    },
+    {
+      "type": "support.variable",
+      "value": ".balance"
+    },
+    {
+      "type": "punctuation.operator",
+      "value": ";"
+    },
+    {
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "comment.line.double-slash",
+      "value": "// balance of the Address in Wei"
+    }
+  ],
+  [
+    {
+      "type": "text",
+      "value": "  "
+    },
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  [
+    {
+      "type": "paren.rparen",
+      "value": "}"
+    }
+  ],
+  []
+]

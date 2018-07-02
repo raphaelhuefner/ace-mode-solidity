@@ -71,16 +71,8 @@
       "value": "("
     },
     {
-      "type": "identifier",
-      "value": "msg"
-    },
-    {
-      "type": "punctuation.operator",
-      "value": "."
-    },
-    {
-      "type": "identifier",
-      "value": "value"
+      "type": "support.variable",
+      "value": "msg.value"
     },
     {
       "type": "text",
