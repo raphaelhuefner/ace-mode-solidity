@@ -1,14 +1,15 @@
-ace.define("ace/mode/solidity_highlight_rules",["require","exports","module","ace/lib/oop","ace/mode/text_highlight_rules"], function(acequire, exports, module) {
+ace.define("ace/mode/solidity_highlight_rules",["require","exports","module","ace/lib/oop","ace/lib/lang","ace/mode/text_highlight_rules"], function(acequire, exports, module) {
 "use strict";
 
 var oop = acequire("../lib/oop");
+var deepCopy = acequire("../lib/lang").deepCopy;
 var TextHighlightRules = acequire("./text_highlight_rules").TextHighlightRules;
 
 var SolidityHighlightRules = function(options) {
     var intTypes = 'byte|int|uint';
     for (var width = 8; width <= 256; width += 8)
         intTypes += '|bytes' + (width / 8) + '|uint' + width + '|int' + width;
-    var keywordMapper = this.createKeywordMapper({
+    var mainKeywordsByType = {
         "variable.language":
             "this|super",
         "keyword":
@@ -54,7 +55,15 @@ var SolidityHighlightRules = function(options) {
             "seconds|minutes|hours|days|weeks",
         "constant.numeric.other.unit.time.deprecated":
             "years"
-    }, "identifier");
+    }
+    var mainKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "identifier");
+    var mainKeywordList = deepCopy(this.$keywordList);
+    var functionArgumentsKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "variable.parameter");
+    var functionArgumentsKeywordList = deepCopy(this.$keywordList);
+    // TODO If `functionArgumentsKeywordMapper` is created from a different list than `mainKeywordMapper`,
+    // merge `functionArgumentsKeywordList` and `mainKeywordList` back into `this.$keywordList` and de-dupe it.
+    // NOTE `this.$keywordList` is a side effect of `this.createKeywordMapper()` and is used for auto-completion and the like.
+    // Unfortunately this means that creating multiple keyword mappers needs a bit of hand-holding so that auto-completion is not limited to only the last keyword list.
 
     var identifierRe = "[a-zA-Z_$][a-zA-Z_$0-9]*\\b|\\$"; // Single "$" can't have a word boundary since it's not a word char.
 
@@ -78,30 +87,30 @@ var SolidityHighlightRules = function(options) {
             {
                 token : "comment.block.doc.documentation", // doc comment
                 regex : "\\/\\*(?=\\*)",
-                next  : "doc_comment"
+                push  : "doc_comment"
             }, {
                 token : "comment.line.triple-slash.double-slash.doc.documentation", // triple slash "NatSpec" doc comment
                 regex : "\\/\\/\\/",
-                next : "doc_line_comment"
+                push  : "doc_line_comment"
             }, {
                 token : "comment.block", // multi line comment
                 regex : "\\/\\*",
-                next : "comment"
+                push  : "comment"
             }, {
                 token : "comment.line.double-slash",
                 regex : "\\/\\/",
-                next : "line_comment"
+                push  : "line_comment"
             }, {
                 token : "text",
                 regex : "\\s+|^$"
             }, {
                 token : "string.quoted.single",
                 regex : "'(?=.)",
-                next  : "qstring"
+                push  : "qstring"
             }, {
                 token : "string.quoted.double",
                 regex : '"(?=.)',
-                next  : "qqstring"
+                push  : "qqstring"
             }, {
                 token : "storage.type.reserved", // TODO really "reserved"? Compiler 0.4.24 says "UnimplementedFeatureError: Not yet implemented - FixedPointType."
                 regex : "u?fixed(?:" +
@@ -150,14 +159,23 @@ var SolidityHighlightRules = function(options) {
                 token : "support.variable.deprecated", // Not in keywordMapper because of ".". Longest match has to be first alternative.
                 regex : /msg\s*\.\s*gas/
             }, {
-                token : [
+                token : [ // FunctionDefinition
                     "storage.type", "text", "entity.name.function", "text", "paren.lparen"
                 ],
                 regex : "(function)(\\s+)(" + identifierRe + ")(\\s*)(\\()",
-                next: "function_arguments"
+                push  : "function_arguments"
             }, {
-                token : keywordMapper,
-                regex : identifierRe
+                token : ["storage.type", "text", "paren.lparen"], // FunctionTypeName && fallback function definition
+                regex : "(function)(\\s*)(\\()",
+                push  : "function_arguments"
+            }, {
+                token : ["keyword", "text", "paren.lparen"], // "returns" clause
+                regex : "(returns)(\\s*)(\\()",
+                push  : "function_arguments"
+            }, {
+                token : mainKeywordMapper,
+                regex : identifierRe,
+                modifyClonedFunctionArgumentsState: "keywordMapper"
             }, {
                 token : "keyword.operator",
                 regex : /--|\*\*|\+\+|=>|<<|>>|<<=|>>=|&&|\|\||[!&|+\-*\/%~^<>=]=?/
@@ -166,26 +184,18 @@ var SolidityHighlightRules = function(options) {
                 regex : /[?:,;.]/
             }, {
                 token : "paren.lparen",
-                regex : /[\[({]/
+                regex : /[\[{]/
+            }, {
+                token : "paren.lparen", // keep "(" separate for easier cloning and modifying into "function_arguments"
+                regex : /[(]/,
+                modifyClonedFunctionArgumentsState: "paren.lparen"
             }, {
                 token : "paren.rparen",
-                regex : /[\])}]/
-            }
-        ],
-        "function_arguments": [
-            {
-                token: "variable.parameter",
-                regex: identifierRe
+                regex : /[\]}]/
             }, {
-                token: "punctuation.operator",
-                regex: "[, ]+"
-            }, {
-                token: "punctuation.operator",
-                regex: "$"
-            }, {
-                token: "empty",
-                regex: "",
-                next: "start"
+                token : "paren.rparen", // keep ")" separate for easier cloning and modifying into "function_arguments"
+                regex : /[)]/,
+                modifyClonedFunctionArgumentsState: "paren.rparen"
             }
         ],
         "comment" : [
@@ -193,10 +203,10 @@ var SolidityHighlightRules = function(options) {
             {
                 token : "comment.block",
                 regex : "\\*\\/",
-                next : "start"
+                next  : "pop"
             }, {
                 defaultToken : "comment.block",
-                caseInsensitive: true
+                caseInsensitive : true
             }
         ],
         "line_comment" : [
@@ -204,10 +214,10 @@ var SolidityHighlightRules = function(options) {
             {
                 token : "comment.line.double-slash",
                 regex : "$|^",
-                next : "start"
+                next  : "pop"
             }, {
                 defaultToken : "comment.line.double-slash",
-                caseInsensitive: true
+                caseInsensitive : true
             }
         ],
         "doc_comment" : [
@@ -216,10 +226,10 @@ var SolidityHighlightRules = function(options) {
             {
                 token : "comment.block.doc.documentation", // closing comment
                 regex : "\\*\\/",
-                next  : "start"
+                next  : "pop"
             }, {
                 defaultToken : "comment.block.doc.documentation",
-                caseInsensitive: true
+                caseInsensitive : true
             }
         ],
         "doc_line_comment" : [
@@ -228,7 +238,7 @@ var SolidityHighlightRules = function(options) {
             {
                 token : "comment.line.triple-slash.double-slash.doc.documentation",
                 regex : "$|^",
-                next  : "start"
+                next  : "pop"
             }, {
                 defaultToken : "comment.line.triple-slash.double-slash.doc.documentation",
                 caseInsensitive : true
@@ -245,9 +255,9 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : "string.quoted.double",
                 regex : '"|$',
-                next  : "start"
+                next  : "pop"
             }, {
-                defaultToken: "string.quoted.double"
+                defaultToken : "string.quoted.double"
             }
         ],
         "qstring" : [
@@ -261,12 +271,31 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : "string.quoted.single",
                 regex : "'|$",
-                next  : "start"
+                next  : "pop"
             }, {
-                defaultToken: "string.quoted.single"
+                defaultToken : "string.quoted.single"
             }
         ]
     };
+
+    var functionArgumentsRules = deepCopy(this.$rules["start"]);
+    functionArgumentsRules.forEach(function(rule, ruleIndex) {
+        if (rule.modifyClonedFunctionArgumentsState) {
+            if (rule.modifyClonedFunctionArgumentsState == "keywordMapper") {
+                rule.token = functionArgumentsKeywordMapper;
+            }
+            if (rule.modifyClonedFunctionArgumentsState == "paren.lparen") {
+                rule.push = "function_arguments";
+            }
+            if (rule.modifyClonedFunctionArgumentsState == "paren.rparen") {
+                rule.next = "pop";
+            }
+            delete rule.modifyClonedFunctionArgumentsState;
+            delete this.$rules["start"][ruleIndex].modifyClonedFunctionArgumentsState;
+            functionArgumentsRules[ruleIndex] = rule;
+        }
+    }, this);
+    this.$rules["function_arguments"] = functionArgumentsRules;
 
     this.normalizeRules();
 };

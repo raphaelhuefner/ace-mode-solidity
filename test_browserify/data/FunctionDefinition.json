@@ -54,11 +54,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -188,11 +188,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -322,11 +322,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -456,11 +456,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -591,11 +591,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -725,11 +725,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -859,11 +859,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -993,11 +993,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1128,11 +1128,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1262,11 +1262,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1396,11 +1396,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1530,11 +1530,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1665,11 +1665,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1799,11 +1799,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1933,11 +1933,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -2067,11 +2067,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -2209,11 +2209,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -2343,11 +2343,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -2477,11 +2477,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -2611,11 +2611,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -2746,11 +2746,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -2880,11 +2880,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3014,11 +3014,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3148,11 +3148,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3283,11 +3283,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3417,11 +3417,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3551,11 +3551,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3685,11 +3685,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3820,11 +3820,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -3954,11 +3954,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -4088,11 +4088,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -4222,11 +4222,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -4364,11 +4364,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -4498,11 +4498,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -4632,11 +4632,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -4766,11 +4766,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -4901,11 +4901,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5035,11 +5035,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5169,11 +5169,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5303,11 +5303,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5438,11 +5438,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5572,11 +5572,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5706,11 +5706,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5840,11 +5840,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -5975,11 +5975,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6109,11 +6109,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6243,11 +6243,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6377,11 +6377,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6523,7 +6523,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "variable.parameter",
       "value": "param"
     },
     {
@@ -6561,11 +6561,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6603,15 +6603,15 @@
       "value": "MyStruct"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.modifier.storagelocation",
       "value": "memory"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6635,7 +6635,7 @@
       "value": "("
     },
     {
-      "type": "identifier",
+      "type": "variable.parameter",
       "value": "MyOtherStruct"
     },
     {
@@ -6677,15 +6677,15 @@
       "value": "MyStruct"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.modifier.storagelocation",
       "value": "storage"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6709,7 +6709,7 @@
       "value": "("
     },
     {
-      "type": "identifier",
+      "type": "variable.parameter",
       "value": "MyOtherStruct"
     },
     {
@@ -6751,15 +6751,15 @@
       "value": "MyStruct"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.modifier.storagelocation",
       "value": "calldata"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6793,11 +6793,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6875,11 +6875,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -6973,11 +6973,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -7103,11 +7103,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -7246,11 +7246,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {

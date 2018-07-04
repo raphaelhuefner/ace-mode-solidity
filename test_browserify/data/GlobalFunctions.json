@@ -56,11 +56,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1141,11 +1141,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {

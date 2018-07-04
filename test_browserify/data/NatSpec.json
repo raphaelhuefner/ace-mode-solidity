@@ -151,11 +151,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -164,14 +164,18 @@
     },
     {
       "type": "punctuation.operator",
-      "value": ", "
+      "value": ","
     },
     {
-      "type": "variable.parameter",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
       "value": "uint"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -207,7 +211,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "variable.parameter",
       "value": "s"
     },
     {
@@ -227,7 +231,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "variable.parameter",
       "value": "p"
     },
     {
@@ -531,11 +535,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "uint"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -544,14 +548,18 @@
     },
     {
       "type": "punctuation.operator",
-      "value": ", "
+      "value": ","
     },
     {
-      "type": "variable.parameter",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
       "value": "uint"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -587,7 +595,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "variable.parameter",
       "value": "s"
     },
     {
@@ -607,7 +615,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "variable.parameter",
       "value": "p"
     },
     {
@@ -953,11 +961,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type.array.dynamic",
       "value": "string"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1189,11 +1197,11 @@
       "value": "("
     },
     {
-      "type": "variable.parameter",
+      "type": "storage.type",
       "value": "address"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
@@ -1202,14 +1210,18 @@
     },
     {
       "type": "punctuation.operator",
-      "value": ", "
+      "value": ","
     },
     {
-      "type": "variable.parameter",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "type": "storage.type",
       "value": "uint256"
     },
     {
-      "type": "punctuation.operator",
+      "type": "text",
       "value": " "
     },
     {
