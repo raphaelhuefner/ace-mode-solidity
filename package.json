@@ -9,8 +9,8 @@
     "test-serve": "npm run test-build && node ./test_browserify/serve-editor.js",
     "test": "npm run test-build && node ./test_browserify/run.js",
     "reports-prep": "npm run test-build && node ./test_browserify/reports-prep.js",
-    "reports-serve": "npm run reports-prep && node ./test_browserify/reports-serve.js",
-    "reports-serve-quick": "node ./test_browserify/reports-serve.js"
+    "reports-serve": "node ./test_browserify/reports-serve.js",
+    "reports": "npm run reports-prep && node ./test_browserify/reports-serve.js"
   },
   "repository": {
     "type": "git",

@@ -109,7 +109,7 @@ class Stylist {
 
   _printLabel(input) {
     let label = input.replace(/([a-z])([A-Z])/g, '$1 $2').toUpperCase();
-    this.print(`<h1>${label}</h1>`);
+    this.print(`<h2>${label}</h2>`);
   }
 
   style() {
