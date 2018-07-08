@@ -1,12 +1,3 @@
-const gatherTokenizations = require('./gather-tokenizations.js');
-const readFilePromise = require('fs-readfile-promise');
-const writeFilePromise = require('fs-writefile-promise');
-const chalk = require('chalk');
-const hasFlag = require('has-flag');
-
-const DATADIR = __dirname + '/data';
-const CACHEDIR = __dirname + '/cache';
-
 class Stats {
   constructor() {
     this.filesWithDifferentLineCount = new Map();
@@ -95,31 +86,50 @@ class Stats {
     this._visitEachLine(fileName, oldTokenization, newTokenization);
   }
 
-  _sprintLabel(input) {
-    let output = '';
-    let label = input.replace(/([a-z])([A-Z])/g, '$1 $2').toUpperCase();
-    output += '='.repeat(label.length) + "\n";
-    output += label + "\n";
-    output += '='.repeat(label.length) + "\n";
-    return output;
+  get summary() {
+    return {
+      filesWithDifferentLineCount: this.filesWithDifferentLineCount,
+      linesWithDifferentTokenCount: this.linesWithDifferentTokenCount,
+      tokensWithDifferentStringValue: this.tokensWithDifferentStringValue,
+      buckets: this.buckets
+    };
+  }
+}
+
+
+class Stylist {
+  constructor(summary) {
+    this.summary = summary;
+    this.lines = [];
   }
 
-  get summary() {
-    let output = '';
+  print(...stuff) {
+    this.lines = this.lines.concat(stuff);
+  }
+
+  _printLabel(input) {
+    let label = input.replace(/([a-z])([A-Z])/g, '$1 $2').toUpperCase();
+    this.print(`<h1>${label}</h1>`);
+  }
+
+  style() {
     for (let statType of ['filesWithDifferentLineCount', 'linesWithDifferentTokenCount', 'tokensWithDifferentStringValue']) {
-      let stats = this[statType];
+      let stats = this.summary[statType];
       if (0 == stats.size) continue;
-      output += this._sprintLabel(statType);
+      this._printLabel(statType);
+      this.print(`<ul>`);
       for (let [id, {before, after}] of stats) {
-        output += `${chalk.blue(id)}: ${chalk.red(before)} => ${chalk.green(after)}\n`;
+        this.print(`<li>`);
+        this.print(`${id}: <span class="before">${before}</span> &rarr; <span class="after">${after}</span>`);
+        this.print(`</li>`);
       }
-      output += '#'.repeat(80) + "\n";
+      this.print(`</ul>`);
+      this.print(`<hr />`);
     }
 
-    if (0 == this.buckets.size) return output;
-    output += this._sprintLabel('Changed Tokenizations');
+    if (0 == this.summary.buckets.size) return;
     let sortableBuckets = [];
-    for (let [bucketId, stat] of this.buckets) {
+    for (let [bucketId, stat] of this.summary.buckets) {
       sortableBuckets.push(stat);
     }
     sortableBuckets.sort((a, b) => {
@@ -129,52 +139,44 @@ class Stats {
       if (a.after < b.after) return -1;
       if (a.after > b.after) return  1;
 
-      if (a.total < b.total) return /*-1*/  1;
-      if (a.total > b.total) return /* 1*/ -1;
+      if (a.total < b.total) return /*-1; // ASC*/  1; // DESC
+      if (a.total > b.total) return /* 1; // ASC*/ -1; // DESC
 
       if (a.value < b.value) return -1;
       if (a.value > b.value) return  1;
 
       return 0;
     });
+    this._printLabel('Changed Tokenizations');
+    this.print(`<ul>`);
     for (let {value, before, after, total, files} of sortableBuckets) {
       let fileList = Array.from(files.values()).join(', ');
-      output += `${chalk.red(before)} => ${chalk.green(after)} n=${chalk.yellow(total)}, "${chalk.blue(value)}", [${fileList}]\n`;
+      this.print(`<li>`);
+      this.print(`<span class="before">${before}</span> &rarr; <span class="after">${after}</span> n=${total}, <code>"${value}"</code>, [${fileList}]`);
+      this.print(`</li>`);
     }
-    output += '#'.repeat(80) + "\n";
-
-    return output;
+    this.print(`</ul>`);
+    this.print(`<hr />`);
   }
-}
 
-function getCacheFilename() {
-  return `${CACHEDIR}/new-tokenizations.json`;
-}
-
-async function writeCache() {
-  const tokenizations = await gatherTokenizations();
-  let cacheFileContents = JSON.stringify(tokenizations, null, 2);
-  cacheFileContents += "\n"; // to satisfy `git diff`
-  await writeFilePromise(getCacheFilename(), cacheFileContents);
-}
-
-async function runStats() {
-  const stats = new Stats();
-  let tokenizations = JSON.parse(await readFilePromise(getCacheFilename()));
-  for (let key of Object.keys(tokenizations)) {
-    let jsonFileName = `${DATADIR}/${key}.json`;
-    let oldTokenization = JSON.parse(await readFilePromise(jsonFileName));
-    let newTokenization = tokenizations[key];
-    stats.gather(key, oldTokenization, newTokenization);
+  get output() {
+    return this.lines.join("\n");
   }
-  console.log(stats.summary);
 }
 
 async function run() {
-  if (! hasFlag('skip-cache-write')) {
-    await writeCache();
+  const stats = new Stats();
+  const tokenizations = {};
+  for (dataSetId of ['old', 'new']) {
+    tokenizations[dataSetId] = await fetch(`./${dataSetId}-tokenizations.json`).then(res => res.json());
   }
-  await runStats();
+  for (let key of Object.keys(tokenizations['new'])) {
+    stats.gather(key, tokenizations['old'][key], tokenizations['new'][key]);
+  }
+
+  const stylist = new Stylist(stats.summary);
+  stylist.style();
+  document.getElementById('report').innerHTML = stylist.output;
 }
 
 run();

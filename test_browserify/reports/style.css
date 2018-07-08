@@ -1,0 +1,53 @@
+li {
+  line-height: 200%;
+}
+
+li code {
+  display:inline;
+}
+
+/* by-string-value.html */
+span.type {
+  padding: 1px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+}
+
+span.type.new-old {
+  border: 1px solid #6666ff;
+  background-color: #ddddff;
+}
+
+span.type.old {
+  border: 1px solid #ff0000;
+  background-color: #ffcccc;
+}
+
+span.type.new {
+  border:1px solid  #00ff00;
+  background-color: #ccffcc;
+}
+
+
+/* diff-summary.html */
+span.neutral {
+  padding: 1px;
+  border-radius: 5px;
+  border: 1px solid #6666ff;
+  background-color: #ddddff;
+}
+
+span.before {
+  padding: 1px;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+  background-color: #ffcccc;
+}
+
+span.after {
+  padding: 1px;
+  border-radius: 5px;
+  border: 1px solid #00ff00;
+  background-color: #ccffcc;
+}
