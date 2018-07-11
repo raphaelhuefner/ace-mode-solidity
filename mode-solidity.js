@@ -7,8 +7,9 @@ var TextHighlightRules = acequire("./text_highlight_rules").TextHighlightRules;
 
 var SolidityHighlightRules = function(options) {
     var intTypes = 'byte|int|uint';
-    for (var width = 8; width <= 256; width += 8)
+    for (var width = 8; width <= 256; width += 8) {
         intTypes += '|bytes' + (width / 8) + '|uint' + width + '|int' + width;
+    }
     var mainKeywordsByType = {
         "variable.language":
             "this|super",
@@ -59,7 +60,6 @@ var SolidityHighlightRules = function(options) {
             "years"
     }
     var mainKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "identifier");
-    var mainKeywordList = deepCopy(this.$keywordList);
 
     // The purpose of this flag and all related code is that in function
     // argument lists only the function parameter names get tokenized as
@@ -79,11 +79,6 @@ var SolidityHighlightRules = function(options) {
       hasSeenFirstFunctionArgumentKeyword = true;
       return mainKeywordToken;
     };
-
-    // TODO If `functionArgumentsKeywordMapper` is created from a different list than `mainKeywordMapper`,
-    // merge `functionArgumentsKeywordList` and `mainKeywordList` back into `this.$keywordList` and de-dupe it.
-    // NOTE `this.$keywordList` is a side effect of `this.createKeywordMapper()` and is used for auto-completion and the like.
-    // Unfortunately this means that creating multiple keyword mappers needs a bit of hand-holding so that auto-completion is not limited to only the last keyword list.
 
     var identifierRe = "[a-zA-Z_$][a-zA-Z_$0-9]*\\b|\\$"; // Single "$" can't have a word boundary since it's not a word char.
 
@@ -105,7 +100,7 @@ var SolidityHighlightRules = function(options) {
         }
     };
 
-    // copied from ace/mode/text_highlight_rules
+    // Copied from ace/mode/text_highlight_rules and then "augmented".
     var pushFunctionArgumentsState = function(currentState, stack) {
         if (currentState != "start" || stack.length)
             stack.unshift("function_arguments", currentState);
@@ -145,7 +140,7 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : "storage.type.reserved", // TODO really "reserved"? Compiler 0.4.24 says "UnimplementedFeatureError: Not yet implemented - FixedPointType."
                 regex : "u?fixed(?:" +
-                        "8x[0-8]|" + // Docs say 0-80 bits for the fractional part.
+                        "8x[0-8]|" + // Docs say 0-80 for the fractional part. It's unclear whether 0-80 bits or 0-80 decimal places.
                         "16x(?:1[0-6]|[0-9])|" + // Longest match has to be first alternative.
                         "24x(?:2[0-4]|1[0-9]|[0-9])|" +
                         "32x(?:3[0-2]|[1-2][0-9]|[0-9])|" +
@@ -316,8 +311,8 @@ var SolidityHighlightRules = function(options) {
 
     // The "function_arguments" state "inherits" from the "start" state.
     // Since states are not classes, we do the inheritance manually here.
-    // The rules which get overwritten by the "child" state are identified by
-    // "inheritingStateRuleId" properties.
+    // The rules which get overwritten or modified by the "child" state are
+    // identified by "inheritingStateRuleId" properties.
     var functionArgumentsRules = deepCopy(this.$rules["start"]);
     functionArgumentsRules.forEach(function(rule, ruleIndex) {
         if (rule.inheritingStateRuleId) {
@@ -345,7 +340,7 @@ var SolidityHighlightRules = function(options) {
                     break;
             }
             delete rule.inheritingStateRuleId;
-            delete this.$rules["start"][ruleIndex].inheritingStateRuleId; // TODO Delete if there will be more "child" states.
+            delete this.$rules["start"][ruleIndex].inheritingStateRuleId; // TODO Keep id if there will be more "child" states.
             functionArgumentsRules[ruleIndex] = rule;
         }
     }, this);
