@@ -58,8 +58,25 @@ var SolidityHighlightRules = function(options) {
     }
     var mainKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "identifier");
     var mainKeywordList = deepCopy(this.$keywordList);
-    var functionArgumentsKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "variable.parameter");
-    var functionArgumentsKeywordList = deepCopy(this.$keywordList);
+
+    var hasSeenFirstFunctionArgumentKeyword = false;
+
+    var functionArgumentsKeywordMapper = function functionArgumentsKeywordMapper(value) {
+      var mainKeywordToken = mainKeywordMapper(value);
+      if (
+        hasSeenFirstFunctionArgumentKeyword
+        &&
+        ("identifier" == mainKeywordToken)
+      ) {
+        mainKeywordToken = "variable.parameter";
+      }
+      hasSeenFirstFunctionArgumentKeyword = true;
+      return mainKeywordToken;
+    };
+
+    // var functionArgumentsKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "variable.parameter");
+    // var functionArgumentsKeywordList = deepCopy(this.$keywordList);
+
     // TODO If `functionArgumentsKeywordMapper` is created from a different list than `mainKeywordMapper`,
     // merge `functionArgumentsKeywordList` and `mainKeywordList` back into `this.$keywordList` and de-dupe it.
     // NOTE `this.$keywordList` is a side effect of `this.createKeywordMapper()` and is used for auto-completion and the like.
@@ -80,6 +97,14 @@ var SolidityHighlightRules = function(options) {
     var natSpecRule = {
         token : "comment.doc.documentation.tag", // TODO ".block" vs. ".line"
         regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
+    };
+
+    // copied from ace/mode/text_highlight_rules
+    var pushFunctionArgumentsState = function(currentState, stack) {
+        if (currentState != "start" || stack.length)
+            stack.unshift("function_arguments", currentState);
+        hasSeenFirstFunctionArgumentKeyword = false;
+        return "function_arguments";
     };
 
     this.$rules = {
@@ -124,7 +149,8 @@ var SolidityHighlightRules = function(options) {
                         "64x(?:6[0-4]|[1-5][0-9]|[0-9])|" +
                         "72x(?:7[0-2]|[1-6][0-9]|[0-9])|" +
                         "(?:80|88|96|104|112|120|128|136|144|152|160|168|176|184|192|200|208|216|224|232|240|248|256)x(?:80|[1-7][0-9]|[0-9])" +
-                        ")?"
+                        ")?",
+                modifyClonedState : "fixed_number_type"
             }, {
                 token : "keyword.control", // PlaceholderStatement in ModifierDefinition
                 regex : /\b_\b/
@@ -163,39 +189,43 @@ var SolidityHighlightRules = function(options) {
                     "storage.type", "text", "entity.name.function", "text", "paren.lparen"
                 ],
                 regex : "(function)(\\s+)(" + identifierRe + ")(\\s*)(\\()",
-                push  : "function_arguments"
+                next  : pushFunctionArgumentsState
             }, {
                 token : ["storage.type", "text", "paren.lparen"], // FunctionTypeName && fallback function definition
                 regex : "(function)(\\s*)(\\()",
-                push  : "function_arguments"
+                next  : pushFunctionArgumentsState
             }, {
                 token : ["keyword", "text", "paren.lparen"], // "returns" clause
                 regex : "(returns)(\\s*)(\\()",
-                push  : "function_arguments"
+                next  : pushFunctionArgumentsState
             }, {
                 token : mainKeywordMapper,
                 regex : identifierRe,
-                modifyClonedFunctionArgumentsState: "keywordMapper"
+                modifyClonedState : "keywordMapper"
             }, {
                 token : "keyword.operator",
                 regex : /--|\*\*|\+\+|=>|<<|>>|<<=|>>=|&&|\|\||[!&|+\-*\/%~^<>=]=?/
             }, {
                 token : "punctuation.operator",
-                regex : /[?:,;.]/
+                regex : /[?:;]/
+            }, {
+                token : "punctuation.operator", // keep "." and "," separate for easier cloning and modifying into "function_arguments"
+                regex : /[.,]/,
+                modifyClonedState : "punctuation"
             }, {
                 token : "paren.lparen",
                 regex : /[\[{]/
             }, {
                 token : "paren.lparen", // keep "(" separate for easier cloning and modifying into "function_arguments"
                 regex : /[(]/,
-                modifyClonedFunctionArgumentsState: "paren.lparen"
+                modifyClonedState : "paren.lparen"
             }, {
                 token : "paren.rparen",
                 regex : /[\]}]/
             }, {
                 token : "paren.rparen", // keep ")" separate for easier cloning and modifying into "function_arguments"
                 regex : /[)]/,
-                modifyClonedFunctionArgumentsState: "paren.rparen"
+                modifyClonedState : "paren.rparen"
             }
         ],
         "comment" : [
@@ -249,7 +279,7 @@ var SolidityHighlightRules = function(options) {
                 token : "constant.language.escape",
                 regex : escapedRe
             }, {
-                token : "string.quoted.double",
+                token : "string.quoted.double", // Multi-line string by ending line with back-slash, i.e. escaping \n.
                 regex : "\\\\$",
                 next  : "qqstring"
             }, {
@@ -265,7 +295,7 @@ var SolidityHighlightRules = function(options) {
                 token : "constant.language.escape",
                 regex : escapedRe
             }, {
-                token : "string.quoted.single",
+                token : "string.quoted.single", // Multi-line string by ending line with back-slash, i.e. escaping \n.
                 regex : "\\\\$",
                 next  : "qstring"
             }, {
@@ -280,18 +310,32 @@ var SolidityHighlightRules = function(options) {
 
     var functionArgumentsRules = deepCopy(this.$rules["start"]);
     functionArgumentsRules.forEach(function(rule, ruleIndex) {
-        if (rule.modifyClonedFunctionArgumentsState) {
-            if (rule.modifyClonedFunctionArgumentsState == "keywordMapper") {
-                rule.token = functionArgumentsKeywordMapper;
+        if (rule.modifyClonedState) {
+            switch (rule.modifyClonedState) {
+                case "keywordMapper":
+                    rule.token = functionArgumentsKeywordMapper;
+                    break;
+                case "punctuation":
+                    rule.onMatch = function onFunctionArgumentsPunctuationMatch(value, currentState, stack) {
+                        hasSeenFirstFunctionArgumentKeyword = false;
+                        return rule.token;
+                    };
+                  break;
+                case "paren.lparen":
+                    rule.next = pushFunctionArgumentsState;
+                    break;
+                case "paren.rparen":
+                    rule.next = "pop";
+                    break;
+                case "fixed_number_type":
+                    rule.onMatch = function onFunctionArgumentsFixedNumberTypeMatch(value, currentState, stack) {
+                        hasSeenFirstFunctionArgumentKeyword = true;
+                        return rule.token;
+                    };
+                    break;
             }
-            if (rule.modifyClonedFunctionArgumentsState == "paren.lparen") {
-                rule.push = "function_arguments";
-            }
-            if (rule.modifyClonedFunctionArgumentsState == "paren.rparen") {
-                rule.next = "pop";
-            }
-            delete rule.modifyClonedFunctionArgumentsState;
-            delete this.$rules["start"][ruleIndex].modifyClonedFunctionArgumentsState;
+            delete rule.modifyClonedState;
+            delete this.$rules["start"][ruleIndex].modifyClonedState;
             functionArgumentsRules[ruleIndex] = rule;
         }
     }, this);
