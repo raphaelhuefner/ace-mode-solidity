@@ -51,7 +51,7 @@
       "value": "// "
     },
     {
-      "type": "comment.doc.documentation.tag.storage.type",
+      "type": "comment.line.doc.documentation.tag.storage.type",
       "value": "TODO"
     }
   ],
@@ -61,7 +61,7 @@
       "value": "// "
     },
     {
-      "type": "comment.doc.documentation.tag.storage.type",
+      "type": "comment.line.doc.documentation.tag.storage.type",
       "value": "FIXME"
     }
   ],
@@ -71,7 +71,7 @@
       "value": "// "
     },
     {
-      "type": "comment.doc.documentation.tag.storage.type",
+      "type": "comment.line.doc.documentation.tag.storage.type",
       "value": "XXX"
     }
   ],
@@ -81,8 +81,67 @@
       "value": "// "
     },
     {
-      "type": "comment.doc.documentation.tag.storage.type",
+      "type": "comment.line.doc.documentation.tag.storage.type",
       "value": "HACK"
+    }
+  ],
+  [],
+  [
+    {
+      "type": "comment.block",
+      "value": "/*"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * WIP markers:"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * "
+    },
+    {
+      "type": "comment.block.doc.documentation.tag.storage.type",
+      "value": "TODO"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * "
+    },
+    {
+      "type": "comment.block.doc.documentation.tag.storage.type",
+      "value": "FIXME"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * "
+    },
+    {
+      "type": "comment.block.doc.documentation.tag.storage.type",
+      "value": "XXX"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " * "
+    },
+    {
+      "type": "comment.block.doc.documentation.tag.storage.type",
+      "value": "HACK"
+    }
+  ],
+  [
+    {
+      "type": "comment.block",
+      "value": " */"
     }
   ],
   []

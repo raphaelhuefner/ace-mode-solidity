@@ -61,6 +61,10 @@ var SolidityHighlightRules = function(options) {
     var mainKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "identifier");
     var mainKeywordList = deepCopy(this.$keywordList);
 
+    // The purpose of this flag and all related code is that in function
+    // argument lists only the function parameter names get tokenized as
+    // "variable.parameter", and all other non-keyword identifiers as
+    // "identifier".
     var hasSeenFirstFunctionArgumentKeyword = false;
 
     var functionArgumentsKeywordMapper = function functionArgumentsKeywordMapper(value) {
@@ -76,9 +80,6 @@ var SolidityHighlightRules = function(options) {
       return mainKeywordToken;
     };
 
-    // var functionArgumentsKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "variable.parameter");
-    // var functionArgumentsKeywordList = deepCopy(this.$keywordList);
-
     // TODO If `functionArgumentsKeywordMapper` is created from a different list than `mainKeywordMapper`,
     // merge `functionArgumentsKeywordList` and `mainKeywordList` back into `this.$keywordList` and de-dupe it.
     // NOTE `this.$keywordList` is a side effect of `this.createKeywordMapper()` and is used for auto-completion and the like.
@@ -90,15 +91,18 @@ var SolidityHighlightRules = function(options) {
         "u[0-9a-fA-F]{4}|" + // unicode
         ".)"; // stuff like "\r" "\n" "\t" etc.
 
-    var commentWipMarkerRe = "\\b(?:TODO|FIXME|XXX|HACK)\\b";
-    var commentWipMarkerRule = {
-        token : "comment.doc.documentation.tag.storage.type", // TODO ".block" vs. ".line"
-        regex : commentWipMarkerRe
+    var commentWipMarkerRule = function commentWipMarkerRule(commentType) {
+        return {
+            token : "comment." + commentType + ".doc.documentation.tag.storage.type",
+            regex : "\\b(?:TODO|FIXME|XXX|HACK)\\b"
+        }
     };
 
-    var natSpecRule = {
-        token : "comment.doc.documentation.tag", // TODO ".block" vs. ".line"
-        regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
+    var natSpecRule = function natSpecRule(commentType) {
+        return {
+            token : "comment." + commentType + ".doc.documentation.tag",
+            regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
+        }
     };
 
     // copied from ace/mode/text_highlight_rules
@@ -152,7 +156,7 @@ var SolidityHighlightRules = function(options) {
                         "72x(?:7[0-2]|[1-6][0-9]|[0-9])|" +
                         "(?:80|88|96|104|112|120|128|136|144|152|160|168|176|184|192|200|208|216|224|232|240|248|256)x(?:80|[1-7][0-9]|[0-9])" +
                         ")?",
-                modifyClonedState : "fixed_number_type"
+                inheritingStateRuleId : "fixedNumberType"
             }, {
                 token : "keyword.control", // PlaceholderStatement in ModifierDefinition
                 regex : /\b_\b/
@@ -203,7 +207,7 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : mainKeywordMapper,
                 regex : identifierRe,
-                modifyClonedState : "keywordMapper"
+                inheritingStateRuleId : "keywordMapper"
             }, {
                 token : "keyword.operator",
                 regex : /--|\*\*|\+\+|=>|<<|>>|<<=|>>=|&&|\|\||[!&|+\-*\/%~^<>=]=?/
@@ -213,25 +217,25 @@ var SolidityHighlightRules = function(options) {
             }, {
                 token : "punctuation.operator", // keep "." and "," separate for easier cloning and modifying into "function_arguments"
                 regex : /[.,]/,
-                modifyClonedState : "punctuation"
+                inheritingStateRuleId : "punctuation"
             }, {
                 token : "paren.lparen",
                 regex : /[\[{]/
             }, {
                 token : "paren.lparen", // keep "(" separate for easier cloning and modifying into "function_arguments"
                 regex : /[(]/,
-                modifyClonedState : "paren.lparen"
+                inheritingStateRuleId : "lparen"
             }, {
                 token : "paren.rparen",
                 regex : /[\]}]/
             }, {
                 token : "paren.rparen", // keep ")" separate for easier cloning and modifying into "function_arguments"
                 regex : /[)]/,
-                modifyClonedState : "paren.rparen"
+                inheritingStateRuleId : "rparen"
             }
         ],
         "comment" : [
-            commentWipMarkerRule,
+            commentWipMarkerRule("block"),
             {
                 token : "comment.block",
                 regex : "\\*\\/",
@@ -242,7 +246,7 @@ var SolidityHighlightRules = function(options) {
             }
         ],
         "line_comment" : [
-            commentWipMarkerRule,
+            commentWipMarkerRule("line"),
             {
                 token : "comment.line.double-slash",
                 regex : "$|^",
@@ -253,8 +257,8 @@ var SolidityHighlightRules = function(options) {
             }
         ],
         "doc_comment" : [
-            commentWipMarkerRule,
-            natSpecRule,
+            commentWipMarkerRule("block"),
+            natSpecRule("block"),
             {
                 token : "comment.block.doc.documentation", // closing comment
                 regex : "\\*\\/",
@@ -265,8 +269,8 @@ var SolidityHighlightRules = function(options) {
             }
         ],
         "doc_line_comment" : [
-            commentWipMarkerRule,
-            natSpecRule,
+            commentWipMarkerRule("line"),
+            natSpecRule("line"),
             {
                 token : "comment.line.triple-slash.double-slash.doc.documentation",
                 regex : "$|^",
@@ -310,10 +314,14 @@ var SolidityHighlightRules = function(options) {
         ]
     };
 
+    // The "function_arguments" state "inherits" from the "start" state.
+    // Since states are not classes, we do the inheritance manually here.
+    // The rules which get overwritten by the "child" state are identified by
+    // "inheritingStateRuleId" properties.
     var functionArgumentsRules = deepCopy(this.$rules["start"]);
     functionArgumentsRules.forEach(function(rule, ruleIndex) {
-        if (rule.modifyClonedState) {
-            switch (rule.modifyClonedState) {
+        if (rule.inheritingStateRuleId) {
+            switch (rule.inheritingStateRuleId) {
                 case "keywordMapper":
                     rule.token = functionArgumentsKeywordMapper;
                     break;
@@ -323,21 +331,21 @@ var SolidityHighlightRules = function(options) {
                         return rule.token;
                     };
                   break;
-                case "paren.lparen":
+                case "lparen":
                     rule.next = pushFunctionArgumentsState;
                     break;
-                case "paren.rparen":
+                case "rparen":
                     rule.next = "pop";
                     break;
-                case "fixed_number_type":
+                case "fixedNumberType":
                     rule.onMatch = function onFunctionArgumentsFixedNumberTypeMatch(value, currentState, stack) {
                         hasSeenFirstFunctionArgumentKeyword = true;
                         return rule.token;
                     };
                     break;
             }
-            delete rule.modifyClonedState;
-            delete this.$rules["start"][ruleIndex].modifyClonedState;
+            delete rule.inheritingStateRuleId;
+            delete this.$rules["start"][ruleIndex].inheritingStateRuleId; // TODO Delete if there will be more "child" states.
             functionArgumentsRules[ruleIndex] = rule;
         }
     }, this);

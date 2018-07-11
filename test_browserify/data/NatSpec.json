@@ -19,7 +19,7 @@
       "value": "/** "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.block.doc.documentation.tag",
       "value": "@title"
     },
     {
@@ -59,7 +59,7 @@
       "value": "/** "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.block.doc.documentation.tag",
       "value": "@dev"
     },
     {
@@ -73,7 +73,7 @@
       "value": "      * "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.block.doc.documentation.tag",
       "value": "@param"
     },
     {
@@ -87,7 +87,7 @@
       "value": "      * "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.block.doc.documentation.tag",
       "value": "@param"
     },
     {
@@ -101,7 +101,7 @@
       "value": "      * "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.block.doc.documentation.tag",
       "value": "@return"
     },
     {
@@ -115,7 +115,7 @@
       "value": "      * "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.block.doc.documentation.tag",
       "value": "@return"
     },
     {
@@ -393,7 +393,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@title"
     },
     {
@@ -433,7 +433,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@dev"
     },
     {
@@ -451,7 +451,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@param"
     },
     {
@@ -469,7 +469,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@param"
     },
     {
@@ -487,7 +487,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@return"
     },
     {
@@ -505,7 +505,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@return"
     },
     {
@@ -777,7 +777,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@title"
     },
     {
@@ -791,7 +791,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@author"
     },
     {
@@ -805,7 +805,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@notice"
     },
     {
@@ -819,7 +819,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@dev"
     },
     {
@@ -859,7 +859,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@author"
     },
     {
@@ -877,7 +877,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@notice"
     },
     {
@@ -895,7 +895,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@dev"
     },
     {
@@ -913,7 +913,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@param"
     },
     {
@@ -931,7 +931,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@return"
     },
     {
@@ -1117,7 +1117,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@author"
     },
     {
@@ -1157,7 +1157,7 @@
       "value": "/// "
     },
     {
-      "type": "comment.doc.documentation.tag",
+      "type": "comment.line.doc.documentation.tag",
       "value": "@notice"
     },
     {
