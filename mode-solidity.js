@@ -32,6 +32,8 @@ var SolidityHighlightRules = function(options) {
             "var|bool|address|" + intTypes,
         "storage.type.array.dynamic":
             "bytes|string",
+        "storage.modifier.inheritance":
+            "is",
         "storage.modifier.storagelocation":
             "storage|memory|calldata",
         "storage.modifier.statemutability":

@@ -189,7 +189,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.inheritance",
       "value": "is"
     },
     {
@@ -234,7 +234,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.inheritance",
       "value": "is"
     },
     {
@@ -339,7 +339,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.inheritance",
       "value": "is"
     },
     {
@@ -720,7 +720,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.inheritance",
       "value": "is"
     },
     {
@@ -827,7 +827,7 @@
       "value": " "
     },
     {
-      "type": "identifier",
+      "type": "storage.modifier.inheritance",
       "value": "is"
     },
     {
