@@ -2,7 +2,7 @@
   "name": "ace-mode-solidity",
   "version": "0.0.1-alpha.3",
   "description": "Ace Edit Mode for Ethereum's Solidity language.",
-  "browser": "mode-solidity.js",
+  "browser": "remix-ide/mode-solidity.js",
   "scripts": {
     "test-build": "node ./test_browserify/build.js",
     "test-overwrite": "npm run test-build && node ./test_browserify/overwrite-expected-tokenizations.js",
