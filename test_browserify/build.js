@@ -20,7 +20,7 @@ async function build() {
 
   browserify(browserify_opts)
     .require(require.resolve('./cache/solidity-snippets.js'), { basedir: __dirname })
-    .require(require.resolve('../remix-ide/mode-solidity.js'), { basedir: __dirname })
+    .require(require.resolve('../build/remix-ide/mode-solidity.js'), { basedir: __dirname })
     .require(require.resolve('./src/solidity-editor.js'), { entry: true, basedir: __dirname })
 
     .bundle()

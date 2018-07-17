@@ -1,5 +1,5 @@
 var ace = require('brace');
-require('../../remix-ide/mode-solidity.js');
+require('../../build/remix-ide/mode-solidity.js');
 var soliditySnippets = require('../cache/solidity-snippets.js');
 
 var editor = ace.edit('editor');
