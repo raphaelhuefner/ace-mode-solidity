@@ -37,14 +37,21 @@
   "homepage": "https://github.com/raphaelhuefner/ace-mode-solidity#readme",
   "dependencies": {},
   "devDependencies": {
+    "ast-types": "^0.11.5",
     "brace": "^0.8.0",
     "browserify": "^16.1.0",
+    "dependency-solver": "^1.0.6",
+    "download": "^7.1.0",
     "enumerate-files": "^2.0.0",
     "express": "^4.16.3",
     "fs-readfile-promise": "^3.0.1",
     "fs-writefile-promise": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "mkdirp-promise": "^5.0.1",
     "opn": "^5.3.0",
     "puppeteer": "^1.5.0",
+    "recast": "^0.15.2",
+    "semver": "^5.5.0",
     "tape": "^4.9.1"
   }
 }

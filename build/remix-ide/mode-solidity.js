@@ -60,11 +60,6 @@ var SolidityHighlightRules = function(options) {
             "years"
     }
     var mainKeywordMapper = this.createKeywordMapper(mainKeywordsByType, "identifier");
-
-    // The purpose of this flag and all related code is that in function
-    // argument lists only the function parameter names get tokenized as
-    // "variable.parameter", and all other non-keyword identifiers as
-    // "identifier".
     var hasSeenFirstFunctionArgumentKeyword = false;
 
     var functionArgumentsKeywordMapper = function functionArgumentsKeywordMapper(value) {
@@ -99,8 +94,6 @@ var SolidityHighlightRules = function(options) {
             regex : "\\B@(?:author|dev|notice|param|return|title)\\b"
         }
     };
-
-    // Copied from ace/mode/text_highlight_rules and then "augmented".
     var pushFunctionArgumentsState = function(currentState, stack) {
         if (currentState != "start" || stack.length)
             stack.unshift("function_arguments", currentState);
@@ -308,11 +301,6 @@ var SolidityHighlightRules = function(options) {
             }
         ]
     };
-
-    // The "function_arguments" state "inherits" from the "start" state.
-    // Since states are not classes, we do the inheritance manually here.
-    // The rules which get overwritten or modified by the "child" state are
-    // identified by "inheritingStateRuleId" properties.
     var functionArgumentsRules = deepCopy(this.$rules["start"]);
     functionArgumentsRules.forEach(function(rule, ruleIndex) {
         if (rule.inheritingStateRuleId) {
@@ -680,7 +668,7 @@ var CstyleBehaviour = function() {
 
 };
 
-
+    
 CstyleBehaviour.isSaneInsertion = function(editor, session) {
     var cursor = editor.getCursorPosition();
     var iterator = new TokenIterator(session, cursor.row, cursor.column);
@@ -784,16 +772,16 @@ oop.inherits(FoldMode, BaseFoldMode);
 
             if (match[1])
                 return this.openingBracketBlock(session, match[1], row, i);
-
+                
             var range = session.getCommentFoldRange(row, i + match[0].length, 1);
-
+            
             if (range && !range.isMultiLine()) {
                 if (forceMultiline) {
                     range = this.getSectionRange(session, row);
                 } else if (foldStyle != "all")
                     range = null;
             }
-
+            
             return range;
         }
 
@@ -810,7 +798,7 @@ oop.inherits(FoldMode, BaseFoldMode);
             return session.getCommentFoldRange(row, i, -1);
         }
     };
-
+    
     this.getSectionRange = function(session, row) {
         var line = session.getLine(row);
         var startIndent = line.search(/\S/);
@@ -827,7 +815,7 @@ oop.inherits(FoldMode, BaseFoldMode);
             if  (startIndent > indent)
                 break;
             var subRange = this.getFoldWidgetRange(session, "all", row);
-
+            
             if (subRange) {
                 if (subRange.start.row <= startRow) {
                     break;
@@ -839,7 +827,7 @@ oop.inherits(FoldMode, BaseFoldMode);
             }
             endRow = row;
         }
-
+        
         return new Range(startRow, startColumn, endRow, session.getLine(endRow).length);
     };
 
@@ -912,21 +900,6 @@ oop.inherits(Mode, TextMode);
     this.autoOutdent = function(state, doc, row) {
         this.$outdent.autoOutdent(doc, row);
     };
-
-//    this.createWorker = function(session) {
-//        var worker = new WorkerClient(["ace"], "ace/mode/solidity_worker", "SolidityWorker");
-//        worker.attachToDocument(session.getDocument());
-//
-//        worker.on("jslint", function(results) {
-//            session.setAnnotations(results.data);
-//        });
-//
-//        worker.on("terminate", function() {
-//            session.clearAnnotations();
-//        });
-//
-//        return worker;
-//    };
 
     this.$id = "ace/mode/solidity";
 }).call(Mode.prototype);

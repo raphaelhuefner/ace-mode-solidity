@@ -1,0 +1,4574 @@
+{
+  "v1.1.8": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/tokenizer": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/token_iterator": [],
+    "ace/undomanager": []
+  },
+  "v1.1.9": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/token_iterator": [],
+    "ace/undomanager": []
+  },
+  "v1.2.0": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/token_iterator": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.1": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/token_iterator": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.2": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/token_iterator": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.3": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/token_iterator": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.4": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/token_iterator": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.5": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/token_iterator": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.6": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/token_iterator": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.7": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput_ios": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/keys"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/keyboard/textinput_ios"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/token_iterator": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.8": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput_ios": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/keys"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/keyboard/textinput_ios"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/token_iterator": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.2.9": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput_ios": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/keys"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/keyboard/textinput_ios"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/bidihandler": [
+      "ace/lib/bidiutil",
+      "ace/lib/lang",
+      "ace/lib/useragent"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/token_iterator": [
+      "ace/range"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/bidihandler",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/mouse/fold_handler": [],
+    "ace/lib/bidiutil": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/undomanager": []
+  },
+  "v1.3.0": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput_ios": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/keys"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/keyboard/textinput_ios"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/mouse/fold_handler": [
+      "ace/lib/dom"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/bidihandler": [
+      "ace/lib/bidiutil",
+      "ace/lib/lang",
+      "ace/lib/useragent"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/token_iterator": [
+      "ace/range"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/bidihandler",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator",
+      "ace/clipboard"
+    ],
+    "ace/undomanager": [
+      "ace/range"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/lib/bidiutil": [],
+    "ace/range": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/clipboard": []
+  },
+  "v1.3.1": {
+    "ace/lib/keys": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop"
+    ],
+    "ace/lib/event": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/keyboard/textinput_ios": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/keys"
+    ],
+    "ace/keyboard/textinput": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/keyboard/textinput_ios"
+    ],
+    "ace/mouse/default_handlers": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/tooltip": [
+      "ace/lib/oop",
+      "ace/lib/dom"
+    ],
+    "ace/mouse/default_gutter_handler": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/event",
+      "ace/tooltip"
+    ],
+    "ace/mouse/mouse_event": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/mouse/dragdrop_handler": [
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/lib/net": [
+      "ace/lib/dom"
+    ],
+    "ace/lib/app_config": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/config": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/app_config"
+    ],
+    "ace/mouse/mouse_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent",
+      "ace/mouse/default_handlers",
+      "ace/mouse/default_gutter_handler",
+      "ace/mouse/mouse_event",
+      "ace/mouse/dragdrop_handler",
+      "ace/config"
+    ],
+    "ace/mouse/fold_handler": [
+      "ace/lib/dom"
+    ],
+    "ace/keyboard/keybinding": [
+      "ace/lib/keys",
+      "ace/lib/event"
+    ],
+    "ace/bidihandler": [
+      "ace/lib/bidiutil",
+      "ace/lib/lang",
+      "ace/lib/useragent"
+    ],
+    "ace/selection": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter",
+      "ace/range"
+    ],
+    "ace/tokenizer": [
+      "ace/config"
+    ],
+    "ace/mode/text_highlight_rules": [
+      "ace/lib/lang"
+    ],
+    "ace/token_iterator": [
+      "ace/range"
+    ],
+    "ace/mode/behaviour/cstyle": [
+      "ace/lib/oop",
+      "ace/mode/behaviour",
+      "ace/token_iterator",
+      "ace/lib/lang"
+    ],
+    "ace/mode/text": [
+      "ace/tokenizer",
+      "ace/mode/text_highlight_rules",
+      "ace/mode/behaviour/cstyle",
+      "ace/unicode",
+      "ace/lib/lang",
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/anchor": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/document": [
+      "ace/lib/oop",
+      "ace/apply_delta",
+      "ace/lib/event_emitter",
+      "ace/range",
+      "ace/anchor"
+    ],
+    "ace/background_tokenizer": [
+      "ace/lib/oop",
+      "ace/lib/event_emitter"
+    ],
+    "ace/search_highlight": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/edit_session/fold_line": [
+      "ace/range"
+    ],
+    "ace/range_list": [
+      "ace/range"
+    ],
+    "ace/edit_session/fold": [
+      "ace/range",
+      "ace/range_list",
+      "ace/lib/oop"
+    ],
+    "ace/edit_session/folding": [
+      "ace/range",
+      "ace/edit_session/fold_line",
+      "ace/edit_session/fold",
+      "ace/token_iterator"
+    ],
+    "ace/edit_session/bracket_match": [
+      "ace/token_iterator",
+      "ace/range"
+    ],
+    "ace/edit_session": [
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/bidihandler",
+      "ace/config",
+      "ace/lib/event_emitter",
+      "ace/selection",
+      "ace/mode/text",
+      "ace/range",
+      "ace/document",
+      "ace/background_tokenizer",
+      "ace/search_highlight",
+      "ace/edit_session/folding",
+      "ace/edit_session/bracket_match"
+    ],
+    "ace/search": [
+      "ace/lib/lang",
+      "ace/lib/oop",
+      "ace/range"
+    ],
+    "ace/keyboard/hash_handler": [
+      "ace/lib/keys",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/command_manager": [
+      "ace/lib/oop",
+      "ace/keyboard/hash_handler",
+      "ace/lib/event_emitter"
+    ],
+    "ace/commands/default_commands": [
+      "ace/lib/lang",
+      "ace/config",
+      "ace/range"
+    ],
+    "ace/editor": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/keyboard/textinput",
+      "ace/mouse/mouse_handler",
+      "ace/mouse/fold_handler",
+      "ace/keyboard/keybinding",
+      "ace/edit_session",
+      "ace/search",
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/commands/command_manager",
+      "ace/commands/default_commands",
+      "ace/config",
+      "ace/token_iterator",
+      "ace/clipboard"
+    ],
+    "ace/undomanager": [
+      "ace/range"
+    ],
+    "ace/layer/gutter": [
+      "ace/lib/dom",
+      "ace/lib/oop",
+      "ace/lib/lang",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/marker": [
+      "ace/range",
+      "ace/lib/dom"
+    ],
+    "ace/layer/text": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/layer/cursor": [
+      "ace/lib/dom"
+    ],
+    "ace/scrollbar": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/lib/event_emitter"
+    ],
+    "ace/renderloop": [
+      "ace/lib/event"
+    ],
+    "ace/layer/font_metrics": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/lib/lang",
+      "ace/lib/useragent",
+      "ace/lib/event_emitter"
+    ],
+    "ace/virtual_renderer": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/config",
+      "ace/lib/useragent",
+      "ace/layer/gutter",
+      "ace/layer/marker",
+      "ace/layer/text",
+      "ace/layer/cursor",
+      "ace/scrollbar",
+      "ace/scrollbar",
+      "ace/renderloop",
+      "ace/layer/font_metrics",
+      "ace/lib/event_emitter"
+    ],
+    "ace/worker/worker_client": [
+      "ace/lib/oop",
+      "ace/lib/net",
+      "ace/lib/event_emitter",
+      "ace/config"
+    ],
+    "ace/placeholder": [
+      "ace/range",
+      "ace/lib/event_emitter",
+      "ace/lib/oop"
+    ],
+    "ace/mouse/multi_select_handler": [
+      "ace/lib/event",
+      "ace/lib/useragent"
+    ],
+    "ace/commands/multi_select_commands": [
+      "ace/keyboard/hash_handler"
+    ],
+    "ace/multi_select": [
+      "ace/range_list",
+      "ace/range",
+      "ace/selection",
+      "ace/mouse/multi_select_handler",
+      "ace/lib/event",
+      "ace/lib/lang",
+      "ace/commands/multi_select_commands",
+      "ace/search",
+      "ace/edit_session",
+      "ace/editor",
+      "ace/config"
+    ],
+    "ace/mode/folding/fold_mode": [
+      "ace/range"
+    ],
+    "ace/theme/textmate": [
+      "ace/lib/dom"
+    ],
+    "ace/line_widgets": [
+      "ace/lib/oop",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ext/error_marker": [
+      "ace/line_widgets",
+      "ace/lib/dom",
+      "ace/range"
+    ],
+    "ace/ace": [
+      "ace/lib/fixoldbrowsers",
+      "ace/lib/dom",
+      "ace/lib/event",
+      "ace/range",
+      "ace/editor",
+      "ace/edit_session",
+      "ace/undomanager",
+      "ace/virtual_renderer",
+      "ace/worker/worker_client",
+      "ace/keyboard/hash_handler",
+      "ace/placeholder",
+      "ace/multi_select",
+      "ace/mode/folding/fold_mode",
+      "ace/theme/textmate",
+      "ace/ext/error_marker",
+      "ace/config"
+    ],
+    "ace/lib/regexp": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/useragent": [],
+    "ace/range": [],
+    "ace/lib/lang": [],
+    "ace/lib/event_emitter": [],
+    "ace/lib/bidiutil": [],
+    "ace/mode/behaviour": [],
+    "ace/unicode": [],
+    "ace/apply_delta": [],
+    "ace/clipboard": []
+  },
+  "v1.3.2": {
+    "ace/lib/regexp": [],
+    "ace/lib/fixoldbrowsers": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/keys": [],
+    "ace/lib/useragent": [],
+    "ace/lib/event": [],
+    "ace/range": [],
+    "ace/lib/lang": [],
+    "ace/keyboard/textinput_ios": [],
+    "ace/keyboard/textinput": [],
+    "ace/mouse/default_handlers": [],
+    "ace/tooltip": [],
+    "ace/mouse/default_gutter_handler": [],
+    "ace/mouse/mouse_event": [],
+    "ace/mouse/dragdrop_handler": [],
+    "ace/lib/net": [],
+    "ace/lib/event_emitter": [],
+    "ace/lib/app_config": [],
+    "ace/config": [],
+    "ace/mouse/mouse_handler": [],
+    "ace/mouse/fold_handler": [],
+    "ace/keyboard/keybinding": [],
+    "ace/lib/bidiutil": [],
+    "ace/bidihandler": [],
+    "ace/selection": [],
+    "ace/tokenizer": [],
+    "ace/mode/text_highlight_rules": [],
+    "ace/mode/behaviour": [],
+    "ace/token_iterator": [],
+    "ace/mode/behaviour/cstyle": [],
+    "ace/unicode": [],
+    "ace/mode/text": [],
+    "ace/apply_delta": [],
+    "ace/anchor": [],
+    "ace/document": [],
+    "ace/background_tokenizer": [],
+    "ace/search_highlight": [],
+    "ace/edit_session/fold_line": [],
+    "ace/range_list": [],
+    "ace/edit_session/fold": [],
+    "ace/edit_session/folding": [],
+    "ace/edit_session/bracket_match": [],
+    "ace/edit_session": [],
+    "ace/search": [],
+    "ace/keyboard/hash_handler": [],
+    "ace/commands/command_manager": [],
+    "ace/commands/default_commands": [],
+    "ace/clipboard": [],
+    "ace/editor": [],
+    "ace/undomanager": [],
+    "ace/layer/gutter": [],
+    "ace/layer/marker": [],
+    "ace/layer/text": [],
+    "ace/layer/cursor": [],
+    "ace/scrollbar": [],
+    "ace/renderloop": [],
+    "ace/layer/font_metrics": [],
+    "ace/virtual_renderer": [],
+    "ace/worker/worker_client": [],
+    "ace/placeholder": [],
+    "ace/mouse/multi_select_handler": [],
+    "ace/commands/multi_select_commands": [],
+    "ace/multi_select": [],
+    "ace/mode/folding/fold_mode": [],
+    "ace/theme/textmate": [],
+    "ace/line_widgets": [],
+    "ace/ext/error_marker": [],
+    "ace/ace": []
+  },
+  "v1.3.3": {
+    "ace/lib/regexp": [],
+    "ace/lib/fixoldbrowsers": [],
+    "ace/lib/dom": [],
+    "ace/lib/oop": [],
+    "ace/lib/keys": [],
+    "ace/lib/useragent": [],
+    "ace/lib/event": [],
+    "ace/range": [],
+    "ace/lib/lang": [],
+    "ace/keyboard/textinput_ios": [],
+    "ace/keyboard/textinput": [],
+    "ace/mouse/default_handlers": [],
+    "ace/tooltip": [],
+    "ace/mouse/default_gutter_handler": [],
+    "ace/mouse/mouse_event": [],
+    "ace/mouse/dragdrop_handler": [],
+    "ace/lib/net": [],
+    "ace/lib/event_emitter": [],
+    "ace/lib/app_config": [],
+    "ace/config": [],
+    "ace/mouse/mouse_handler": [],
+    "ace/mouse/fold_handler": [],
+    "ace/keyboard/keybinding": [],
+    "ace/lib/bidiutil": [],
+    "ace/bidihandler": [],
+    "ace/selection": [],
+    "ace/tokenizer": [],
+    "ace/mode/text_highlight_rules": [],
+    "ace/mode/behaviour": [],
+    "ace/token_iterator": [],
+    "ace/mode/behaviour/cstyle": [],
+    "ace/unicode": [],
+    "ace/mode/text": [],
+    "ace/apply_delta": [],
+    "ace/anchor": [],
+    "ace/document": [],
+    "ace/background_tokenizer": [],
+    "ace/search_highlight": [],
+    "ace/edit_session/fold_line": [],
+    "ace/range_list": [],
+    "ace/edit_session/fold": [],
+    "ace/edit_session/folding": [],
+    "ace/edit_session/bracket_match": [],
+    "ace/edit_session": [],
+    "ace/search": [],
+    "ace/keyboard/hash_handler": [],
+    "ace/commands/command_manager": [],
+    "ace/commands/default_commands": [],
+    "ace/clipboard": [],
+    "ace/editor": [],
+    "ace/undomanager": [],
+    "ace/layer/gutter": [],
+    "ace/layer/marker": [],
+    "ace/layer/text": [],
+    "ace/layer/cursor": [],
+    "ace/scrollbar": [],
+    "ace/renderloop": [],
+    "ace/layer/font_metrics": [],
+    "ace/virtual_renderer": [],
+    "ace/worker/worker_client": [],
+    "ace/placeholder": [],
+    "ace/mouse/multi_select_handler": [],
+    "ace/commands/multi_select_commands": [],
+    "ace/multi_select": [],
+    "ace/mode/folding/fold_mode": [],
+    "ace/theme/textmate": [],
+    "ace/line_widgets": [],
+    "ace/ext/error_marker": [],
+    "ace/ace": []
+  }
+}
