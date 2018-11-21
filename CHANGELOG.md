@@ -1,3 +1,7 @@
+# 0.1.1 / 2018-11-21
+
+* Update version of indirect dependency [`cached-path-relative`](https://www.npmjs.com/package/cached-path-relative) in `package-lock.json` from `1.0.1` to `1.0.2` due to [CVE-2018-16472](https://nvd.nist.gov/vuln/detail/CVE-2018-16472).
+
 # 0.1.0 / 2018-07-17
 
 * First minor version release as sign of commitment to having `build/remix-ide/mode-solidity.js` as entry point for Remix IDE.

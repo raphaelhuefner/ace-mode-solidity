@@ -1,6 +1,6 @@
 {
   "name": "ace-mode-solidity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ace Edit Mode for Ethereum's Solidity language.",
   "browser": "build/remix-ide/mode-solidity.js",
   "scripts": {
